@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./Design/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./Design/css/slick.css">
+    <link rel="stylesheet" href="./Design/css/slick-theme.css">
+    <link rel="stylesheet" href="./Design/css/dataTables.bootstrap5.min.css">
+    <!-- <link rel="stylesheet" href="./Design/css/style.css"> -->
+    <link rel="stylesheet" href="./Design/css/mainstyle.css">
+
+</head>
+
+<body class="container">
+
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid ubilogo logocenter justify-content-sm-center">
+                <a class="navbar-brand m-0 p-0" href="./index.html">
+                    <img src="./Design/img/ubihome_logo.png" alt="headerlogo">
+                </a>
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"> -->
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <!-- </button> -->
+                <div class=" headerhandler">
+                    <div class=" col-12 d-flex headerlogo justify-content-between">
+                        <div class="ubineticon">
+
+                            <img src="./Design/img/ubinetlogo.png" alt="ubinetlogo" class="ubinet">
+                        </div>
+                        <div class="search col-5">
+                            <form class="example" action="/action_page.php">
+                                <i class="bi bi-search"></i>
+                                <input type="text" class="form-control search_bar" placeholder="Search by KRA Name">
+                                <button class="btn btn-primary"><img src="./Design/img/search_icon.png" width="20"
+                                        alt="search_icon"></button>
+
+                            </form>
+                        </div>
+                        <div class="contactdetail d-flex align-item-center justify-content-between">
+                            <span class="hamburger" onclick="myFunction()"><i class="navbar-toggler-icon"></i></span>
+                            <div class="align-items-end d-flex flex-column">
+                                <p class="headercontact_info--helpline m-0 list_fonmtsize">Helpline 24x7 available in 11
+                                    languages</p>
+                                <ul class="list-unstyled headercontact_info--contact d-flex list_fonmtsize">
+                                    <li><span><img src="./Design/img/cell_phone.png" class="emrcell"
+                                                alt="cellphone"></span></li>
+                                    <li>1800222244</li>
+                                    <li>18002082244</li>
+                                    <li>080-61817110</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+    </header>
+    <main >
+        <div class="sidebar leftaside " id="myDIV">
+            <div class="sidebar_content">
+                
+
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item dash_list arrow">
+
+                        <h2 class="accordion-header w-100">
+                            <a href="./index.html" class="accordion-button collapsed"><span><img
+                                        src="./Design/img/home.png" alt="home"></span>Home</a>
+                        </h2>
+
+
+
+                    </div>
+                    <div class="accordian-item dash_list d-block accordianborder">
+                        <h2 class="accordion-header w-100 " id="flush-headingOne">
+                            <a href="flush-network" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#flush-network" aria-expanded="false"
+                                aria-controls="flush-network"><span><img src="./Design/img/network.png"
+                                        alt="network"></span>Network</a>
+
+                        </h2>
+                        <div id="flush-network" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body p-0 border-top">
+                                <ul class="sublistmenu">
+                                    <li><a href="./iphones.html">IP Phone</a></li>
+                                    <li><a href="./branch.html">Branch</a></li>
+                                    <li><a href="./branch.html">Existing & Closed Branch List</a></li>
+                                    <li><a href="./locator.html">Region</a></li>
+                                    <li><a href="./locator.html">Zone</a></li>
+                                    <li><a href="./locator.html">ATM</a></li>
+                                    <li><a href="./locator.html">Specialized Branch</a></li>
+                                    <li><a href="./locator.html">Locator</a></li>
+                                    <li><a href="./helpdesk.html">Help Desk</a></li>
+                                    <li><a href="./helpdesk.html">SARAL BRANCHES</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item dash_list arrow">
+
+                        <h2 class="accordion-header w-100">
+                            <a href="./downloads.html" class="accordion-button collapsed"><span><img
+                                        src="./Design/img/downloads.png" alt="downloads"></span>Downloads</a>
+                        </h2>
+
+
+
+                    </div>
+                    <div class="accordion-item dash_list arrow">
+
+                        <h2 class="accordion-header w-100">
+                            <a href="./department.html" class="accordion-button collapsed"><span><img
+                                        src="./Design/img/department.png" class="dwidth" alt="department"></span>Departments</a>
+                        </h2>
+
+
+
+                    </div>
+                    <div class="accordian-item dash_list d-block accordianborder">
+                        <h2 class="accordion-header w-100" >
+                            <a href="flush-aboutus" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#flush-aboutus" aria-expanded="false"
+                                aria-controls="flush-aboutus"><span><img src="./Design/img/aboutus.png"
+                                        alt="aboutus"></span>About Us</a>
+
+                        </h2>
+                        <div id="flush-aboutus" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body  p-0 border-top">
+                                <ul class="sublistmenu">
+                                    <li><a href="./overview.html">Overview</a></li>
+                                    <li><a href="./vision_mission.html">vision & Mission</a></li>
+                                   
+                                    <li><a href="./orgnization.html">Organization Chart</a></li>
+                                    <li><a href="./award.html">Awards</a></li>
+                                    <li><a href="./directors.html">Whole time directors</a></li>
+                                    <li><a href="./locator.html">Non Exe Directors</a></li>
+                                    <li><a href="./locator.html">Related parties</a></li>
+                                    <li><a href="./helpdesk.html">History Book</a></li>
+                                  
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordian-item dash_list d-block accordianborder">
+                        <h2 class="accordion-header w-100" >
+                            <a href="flush-ratecharges" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#flush-ratecharges" aria-expanded="false"
+                                aria-controls="flush-ratecharges"><span><img src="./Design/img/rate&charges.png"
+                                        alt="rate&charges"></span>Rates & Charges</a>
+
+                        </h2>
+                        <div id="flush-ratecharges" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul class="sublistmenu">
+                                    <li><a href="./overview.html">Deposite</a></li>
+                                    <li><a href="./vision_mission.html">Retail Loans</a></li>
+                                   
+                                    <li><a href="./orgnization.html">Lending Rates</a></li>
+                                    <li><a href="./award.html">Treasury</a></li>
+                                    <li><a href="./directors.html">Service Charges</a></li>
+                                    <li><a href="./locator.html">RABD</a></li>
+                                  
+                                  
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item dash_list arrow">
+
+                        <h2 class="accordion-header w-100">
+                            <a href="./dc_link.html" class="accordion-button collapsed"><span><img
+                                        src="./Design/img/dclinks.png" alt="dclinks"></span>DC Links</a>
+                        </h2>
+
+
+
+                    </div>
+                    <div class="accordion-item dash_list arrow">
+
+                        <h2 class="accordion-header w-100">
+                            <a href="./dr_links.html" class="accordion-button collapsed"><span><img
+                                        src="./Design/img/drlinks.png" alt="drlinks"></span>DR Links</a>
+                        </h2>
+
+
+
+                    </div>
+                    <div class="accordion-item dash_list arrow accordianborder">
+
+                        <h2 class="accordion-header w-100">
+                            <a href="./fastacess.html" class="accordion-button collapsed"><span><img
+                                        src="./Design/img/fast-access.png" alt="fast-access"></span>Fast Access</a>
+                        </h2>
+
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="maincontaint">
+            <div class="dataholder">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="notification">
+                            <h5>Notification</h5>
+                            <p>Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor
+                                Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="datacontaint ">
+                    <div class="row branch">
+                        <div class="col-md-12 ">
+                            <div class="urls">
+                                <ul class="p-0">
+                                    <li><a href="/index.html">Rates & Charges</a></li>
+                                    <li>> Treasury</li>
+                                    <li class="activepage"> > Treasury</li>
+                                </ul>
+                               
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="tabs row">
+                                <div class="col-md-4">
+                                    <div class=" tabsection ">
+                                        <ul class="nav flex-column nav-pills " id="v-pills-tab" role="tablist"
+                                            aria-orientation="vertical">
+                                            <li> <button class="nav-link active" id="v-pills-mmmarket-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#v-pills-mmmarket" type="button"
+                                                    role="tab" aria-controls="v-pills-mmmarket" aria-selected="true"><span
+                                                        class="check"></span>Morning Market Update</button></li>
+                                            <li> <button class="nav-link" id="v-pills-emupdate-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-emupdate" type="button" role="tab"
+                                                    aria-controls="v-pills-emupdate" aria-selected="false"><span
+                                                        class="check"></span>Evening Market Update</button></li>
+                                            <li><button class="nav-link" id="v-pills-wmupdate-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-wmupdate" type="button" role="tab"
+                                                    aria-controls="v-pills-wmupdate" aria-selected="false"><span
+                                                        class="check"></span>Weekly Market Update</button></li>
+                                            <li><button class="nav-link" id="v-pills-oeresearch-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-oeresearch" type="button" role="tab"
+                                                    aria-controls="v-pills-oeresearch" aria-selected="false"><span
+                                                        class="check"></span>Occasional Economic Research</button></li>
+                                            <li><button class="nav-link" id="v-pills-tb-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-tb" type="button" role="tab"
+                                                    aria-controls="v-pills-tb" aria-selected="false"><span
+                                                        class="check"></span>Treasury Beacon</button></li>
+                                            <li><button class="nav-link" id="v-pills-cardrate-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-cardrate" type="button" role="tab"
+                                                    aria-controls="v-pills-cardrate" aria-selected="false"><span
+                                                        class="check"></span>Card rate</button></li>
+                                            <li><button class="nav-link" id="v-pills-sm-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-sm" type="button" role="tab"
+                                                    aria-controls="v-pills-sm" aria-selected="false"><span
+                                                        class="check"></span>Smart comparision</button></li>
+                                            <li><button class="nav-link" id="v-pills-scc-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-scc" type="button" role="tab"
+                                                    aria-controls="v-pills-scc" aria-selected="false"><span
+                                                        class="check"></span>Smart cross currency</button></li>
+                                           
+                                           
+                                            
+                                           
+                                        </ul>
+
+                                    </div>
+
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="tab-content" id="v-pills-tabContent">
+                                    
+                                        <div class="tab-pane fade show active" id="v-pills-mmmarket" role="tabpanel"
+                                            aria-labelledby="v-pills-mmmarket-tab">
+                                            <div class="containereoftable row">
+                                             
+                                                <div class="col-md-12 ">
+                          
+                                                  
+                                                  <div class="table-responsive border-blue ratechargescontainer">
+                                                 <table class="table ratecharges mb-0">
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="2"><p>May 2022</p></th>
+                                                            
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <a href="" class="d-flex align-items-center">
+                                                                    <span class="icon-document"><img src="./Design/img/icon_Link.png" alt="icon_link"></span>
+                                                                    <span class="mb-0">Morning Update 02.05.2022.pdf</span>
+                                                                </a>
+                                                            </td>
+                                                           
+                                                          
+                                                        </tr>
+                                                    </tbody>
+                                                 </table>
+                                                  </div>
+                                                  <div class="table-responsive border-blue ratechargescontainer mt-4">
+                                                 <table class="table ratecharges mb-0">
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="2"><p>April 2022</p></th>
+                                                            
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <a href="" class="d-flex align-items-center">
+                                                                    <span class="icon-document"><img src="./Design/img/icon_Link.png" alt="icon_link"></span>
+                                                                    <span class="mb-0">Morning Update 02.05.2022.pdf</span>
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="" class="d-flex align-items-center">
+                                                                    <span class="icon-document"><img src="./Design/img/icon_Link.png" alt="icon_link"></span>
+                                                                    <span class="mb-0">Morning Update 02.05.2022.pdf</span>
+                                                                </a>
+                                                            </td>
+                                                          
+                                                           
+                                                          
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <a href="" class="d-flex align-items-center">
+                                                                    <span class="icon-document"><img src="./Design/img/icon_Link.png" alt="icon_link"></span>
+                                                                    <span class="mb-0">Morning Update 02.05.2022.pdf</span>
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="" class="d-flex align-items-center">
+                                                                    <span class="icon-document"><img src="./Design/img/icon_Link.png" alt="icon_link"></span>
+                                                                    <span class="mb-0">Morning Update 02.05.2022.pdf</span>
+                                                                </a>
+                                                            </td>
+                                                          
+                                                           
+                                                          
+                                                        </tr>
+                                                    </tbody>
+                                                 </table>
+                                                  </div>
+                                                  <div class="table-responsive border-blue ratechargescontainer mt-4">
+                                                 <table class="table ratecharges mb-0">
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="2"><p>March 2022</p></th>
+                                                            
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <a href="" class="d-flex align-items-center">
+                                                                    <span class="icon-document"><img src="./Design/img/icon_Link.png" alt="icon_link"></span>
+                                                                    <span class="mb-0">Morning Update 02.05.2022.pdf</span>
+                                                                </a>
+                                                            </td>
+                                                           
+                                                          
+                                                        </tr>
+                                                    </tbody>
+                                                 </table>
+                                                  </div>
+                                                  <div class="table-responsive border-blue ratechargescontainer mt-4">
+                                                 <table class="table ratecharges mb-0">
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="2"><p>February 2022</p></th>
+                                                            
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <a href="" class="d-flex align-items-center">
+                                                                    <span class="icon-document"><img src="./Design/img/icon_Link.png" alt="icon_link"></span>
+                                                                    <span class="mb-0">Morning Update 02.05.2022.pdf</span>
+                                                                </a>
+                                                            </td>
+                                                           
+                                                          
+                                                        </tr>
+                                                    </tbody>
+                                                 </table>
+                                                  </div>
+                        
+                                                   
+                        
+                                                  
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-emupdate" role="tabpanel"
+                                            aria-labelledby="v-pills-emupdate-tab">
+                                            <h1>kasnmdkl;1</h1>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-wmupdate" role="tabpanel"
+                                            aria-labelledby="v-pills-wmupdate-tab">
+                                            <h2>l;jm1</h2>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-oeresearch" role="tabpanel"
+                                            aria-labelledby="v-pills-oeresearch-tab">
+                                            <h2>l;jmzxx1</h2>
+                                        </div>
+                                        
+                                        <div class="tab-pane fade" id="v-pills-tb" role="tabpanel"
+                                            aria-labelledby="v-pills-tb-tab">
+                                            <h2>l;jmzxx2</h2>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-cardrate" role="tabpanel"
+                                            aria-labelledby="v-pills-cardrate-tab">
+                                            <h2>CO Annex1</h2>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-sm" role="tabpanel"
+                                            aria-labelledby="v-pills-sm-tab">
+                                            <h2>CO Annex2</h2>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-scc" role="tabpanel"
+                                            aria-labelledby="v-pills-scc-tab">
+                                            <h2>CO Annex3</h2>
+                                        </div>
+                                       
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer class="align-items-center d-flex footersection justify-content-between p-3 text-center container">
+        <h6 class=" m-0 text-white">All Rights Are Reserved © 2022 UBI</h6>
+        <h6 class=" m-0 text-white"><span>Visitors : 3,89,908</span></h6>
+    </footer>
+
+    <script src="./Design/js/jquery-3.5.1.js "></script>
+    <script src="./Design/js/bootstrap.bundle.min.js "></script>
+    <script src="./Design/js/jquery.dataTables.min.js"></script>
+    <script src="./Design/js/dataTables.bootstrap5.min.js"></script>
+    <script src="./Design/js/script.js"></script>
+
+    <script>
+
+    </script>
+</body>
+
+</html>

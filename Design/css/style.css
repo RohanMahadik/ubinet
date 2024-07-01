@@ -1,0 +1,2103 @@
+/* UI Devloper:Rohan Mahadik */
+
+
+/* Starting Date:1/09/2022 */
+
+
+/* Stylesheet for UBINET*/
+
+@font-face {
+    font-family: 'Mulish-Bold';
+    src: url('../font/Mulish-Bold.eot');
+    src: url('../font/Mulish-Bold.eot?#iefix') format('embedded-opentype'), url('../font/Mulish-Bold.woff2') format('woff2'), url('../font/Mulish-Bold.woff') format('woff'), url('../font/Mulish-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish-ExtraBold';
+    src: url('../font/Mulish-ExtraBold.eot');
+    src: url('../font/Mulish-ExtraBold.eot?#iefix') format('embedded-opentype'), url('../font/Mulish-ExtraBold.woff2') format('woff2'), url('../font/Mulish-ExtraBold.woff') format('woff'), url('../font/Mulish-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish-Medium';
+    src: url('../font/Mulish-Medium.eot');
+    src: url('../font/Mulish-Medium.eot?#iefix') format('embedded-opentype'), url('../font/Mulish-Medium.woff2') format('woff2'), url('../font/Mulish-Medium.woff') format('woff'), url('../font/Mulish-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish-Regular';
+    src: url('../font/Mulish-Regular.eot');
+    src: url('../font/Mulish-Regular.eot?#iefix') format('embedded-opentype'), url('../font/Mulish-Regular.woff2') format('woff2'), url('../font/Mulish-Regular.woff') format('woff'), url('../font/Mulish-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish-SemiBold';
+    src: url('../font/Mulish-SemiBold.eot');
+    src: url('../font/Mulish-SemiBold.eot?#iefix') format('embedded-opentype'), url('../font/Mulish-SemiBold.woff2') format('woff2'), url('../font/Mulish-SemiBold.woff') format('woff'), url('../font/Mulish-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../font/icomoon/icomoon.eot?pcyvbe');
+    src: url('../font/icomoon/icomoon.eot?pcyvbe#iefix') format('embedded-opentype'), url('../font/icomoon/icomoon.ttf?pcyvbe') format('truetype'), url('../font/icomoon/icomoon.woff?pcyvbe') format('woff'), url('../font/icomoon/icomoon.svg?pcyvbe#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    background-color: #f5f7fb;
+}
+
+h1,
+h2.h3,
+h4,
+h5,
+h6 {
+    color: #162027;
+}
+h4,.commonheadingtitle{
+    font-size: 18px;
+    line-height:normal;
+    letter-spacing: 0.82px;
+   }
+.btn_primary {
+    background-color: #00579c;
+    color: #ffff;
+    font-family: 'Mulish-Bold';
+    font-size: 13px;
+}
+
+.btn_primary:hover {
+    color: #ffff;
+}
+
+.btn_secondry {
+    background-color: #d1e2ff;
+    color: #00579c;
+    border: 1px solid #00579c;
+    font-family: 'Mulish-Bold';
+    font-size: 13px;
+}
+
+.btn_secondry:hover {
+    color: #00579c;
+}
+
+
+/* header css start */
+
+header .ubilogo a img {
+    height: 85px;
+}
+
+header nav {
+    box-shadow: 33px 8px 26px 0 rgba(175, 175, 175, 0.09);
+    background-color: #fff;
+}
+
+header .headerlogo .ubinet {
+    height: 40px;
+}
+
+header .headerhandler {
+    padding: 0 40px;
+    position: relative;
+    width: 100%;
+}
+
+header .headerhandler::after {
+    content: "";
+    position: absolute;
+    left: 17px;
+    height: 80%;
+    width: 2px;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(175 175 175 / 15%);
+}
+
+.search {
+    position: relative;
+    box-shadow: 0 0 40px rgb(51 51 51 / 10%);
+    height: 35px;
+}
+
+.search .bi-search {
+    position: absolute;
+    top: 23%;
+    left: 10px;
+}
+
+input {
+    font-family: 'Mulish-Regular';
+    font-size: 14px;
+}
+
+input.form-control.search_bar {
+    border-right: 1px solid #b0bac9;
+    border-radius: 10px;
+    text-indent: 25px;
+    font-family: 'Mulish-SemiBold';
+    font-size: 14px;
+}
+
+header.form-control {
+    border-top: 1px solid #b0bac9;
+    border-left: 1px solid #b0bac9;
+    border-bottom: 1px solid #b0bac9;
+    border-right: 0;
+}
+
+.search button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 25px;
+    width: 25px;
+    background: #00579c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search button img {
+    height: 15px;
+}
+
+.form-control::placeholder {
+    color: #48536a;
+    font-family: 'Mulish-Medium';
+    font-size: 12px;
+}
+
+.headercontact_info--helpline {
+    font-size: 13px;
+    font-family: 'Mulish-SemiBold';
+    text-align: end;
+}
+
+.headercontact_info--contact li {
+    font-family: 'Mulish-Bold';
+    font-size: 14px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.headercontact_info--contact li:nth-child(3)::after {
+    content: '';
+    height: 11px;
+    width: 2px;
+    background-color: #162027;
+    position: absolute;
+    left: -5px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.headercontact_info--contact li:nth-child(3)::before {
+    content: '';
+    height: 11px;
+    width: 2px;
+    background-color: #162027;
+    position: absolute;
+    right: -5px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+.emrcell{
+    width: 15px;
+    height: 15px;
+}
+
+/* header css end */
+
+/* scrollbar css start */
+::-webkit-scrollbar {
+    width: 5px;
+    /* border-radius: 50%; */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* border-radius: 50%; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background:
+        #b0bac9;
+    border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* scrollbar css end */
+/* main content css start */
+
+.maincontaint {
+    margin-left: 300px;
+}
+
+.dataholder {
+    padding: 2.5%;
+}
+
+
+/* main content css end */
+
+/* emanual page css start */
+.updatelatest ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.border-blue {
+    border: 1px solid #d1e2ff;
+    border-radius: 10px;
+}
+
+.updatelatest ul li {
+    border-top: 1px solid #b0bac9;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+.heading-blue {
+    color: #00579c;
+    font-family: 'Mulish-ExtraBold';
+
+}
+
+.f-18 {
+    font-size: 18px;
+}
+
+.descriptionmannual.border-blue {
+    padding: 15px;
+}
+
+.emanuallist ul {
+    list-style-type: none;
+    padding: 0;
+    border-top: 1px solid #d1e2ff;
+}
+
+.descriptionmannual.border-blue h5 {
+    padding-bottom: 5px;
+}
+
+.emanuallist ul li {
+    margin-top: 15px;
+}
+
+.emanuallist ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Mulish-SemiBold';
+    color: #162027;
+}
+
+/* emannual css end */
+/* sublist css start */
+
+.sublistmenu {
+    list-style-type: none;
+    padding: 0 0 0 25%;
+}
+
+.sublistmenu li a {
+    display: block;
+    text-decoration: none;
+    font-family: 'Mulish-Medium';
+    padding: 10px;
+    font-size: 14px;
+}
+.sublistmenu li{
+    border-bottom: 1px solid #ddd;
+}
+li.dash_list.listaccordian #accordionnetwork .accordion-body,li.dash_list.listaccordian #aboutus  .accordion-body {
+    padding: 1% 10% 1% 25%;
+}
+
+.accordion-button[aria-expanded="true"] a {
+    background-color: rgba(218, 37, 28, 0.48);
+    border: 1px solid rgba(218, 37, 28, 0.15);
+    border-radius: 10px;
+    font-family: 'Mulish-ExtraBold';
+}
+
+/* .dash_list.listaccordian:hover
+{
+    background-color: #fff;
+
+} */
+/* sublist css ned */
+/* dowanload screen css start */
+.downloaddoc li:nth-child(2) {
+    margin-left: 5%;
+}
+
+.downloads .boxcommon {
+    padding: 18px;
+}
+
+.downloaddoc li p {
+    font-size: 14px;
+    color: #162027;
+    font-family: "Mulish-SemiBold";
+}
+
+.downloads a {
+    text-decoration: none;
+}
+
+.titledoc {
+    border-bottom: 1.5px solid #d1e2ff;
+    padding-bottom: 10px;
+}
+
+.titledoc .formdownloaddoc {
+    color: #00579c;
+    font-family: 'Mulish-Bold';
+    font-size: 18px;
+}
+
+.downloadmt {
+    margin-top: 18px;
+}
+
+/* dowanload screen css end */
+/* sidebar css start */
+
+.sidebar {
+    position: fixed;
+    background-color: #fff;
+    height: 100%;
+    width: 300px;
+    overflow: overlay;
+    box-shadow: 0 8px 26px 0 rgba(175, 175, 175, 0.09);
+}
+
+.sidebar_content {
+    margin-bottom: 200px;
+}
+
+.dash_list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    /* margin: 0 10px; */
+}
+
+.dash_list .accordion-item,
+.accordion-button {
+    background-color: transparent;
+}
+
+.dash_list a {
+    text-decoration: none;
+    font-family: 'Mulish-SemiBold';
+    /* font-size: 17px; */
+    color: #162027;
+    padding: 10px 35px;
+}
+.accordion-button:not(.collapsed){
+    color: #162027;
+}
+.dash_list .accordion-button:not(.collapsed) {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.dash_list .accordion-button::after {
+    content: url('../img/arrowdown.png');
+    background-image: none;
+    /* margin-left: -58px; */
+    position: absolute;
+    right: 0;
+    margin: 0 20px;
+
+}
+
+.dash_list .accordion-button:not(.collapsed)::after {
+    content: url('../img/arrowdown.png');
+    background-image: none;
+    transform: rotate(180deg);
+
+}
+
+.dash_list .accordion-button:focus {
+    box-shadow: none;
+}
+
+.dash_list a {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    width: 100%;
+}
+
+.dash_list.listaccordian:active::after {
+    color: '';
+    background-color: white;
+}
+
+.dash_list a span {
+    margin-right: 20px;
+}
+
+.dash_list:hover {
+    /* background-color: rgba(218, 37, 28, 0.15); */
+    /* border-radius: 5px; */
+}
+.accordion-header:hover{
+    background-color: rgba(218, 37, 28, 0.15); 
+     border-radius: 5px;
+}
+.dash_list.listaccordian:hover {
+    background-color: unset;
+}
+
+.dash_list.listaccordian .accordion-button:hover {
+    background-color: rgba(218, 37, 28, 0.15);
+}
+.sublistmenu li a:hover{
+    background-color: rgba(218, 37, 28, 0.15);
+}
+.dash_list:active::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: red;
+    right: 0;
+}
+
+.notification {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    height: 115px;
+    background-image: url('../img/notification.png');
+    background-size: cover;
+    height: auto;
+}
+
+.notification h4 {
+    font-family: 'Mulish-Bold';
+    color: #fff;
+}
+
+.notification p {
+    color: #fff;
+    font-family: 'Mulish-Medium';
+    padding: 0 85px 0 0;
+}
+.dwidth{
+    width: 25px;
+}
+.accordianborder{
+    border-bottom: 1px solid rgba(0,0,0,.125);
+
+}
+.arrow.dash_list .accordion-button::after{
+    display: none;
+}
+#accordionFlushExample{
+    margin: 10px;
+}
+@media only screen and (min-width: 991px) and (max-width: 1599px) {
+    .dash_list a {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1500px) {
+    .dash_list a {
+        font-size: 15px;
+        padding: 10px 15px;
+    }
+}
+
+
+/* sidebar css end */
+
+.datacontaint {
+    margin-top: 2.5%;
+    margin-bottom: 5%;
+}
+
+.pagelinks {
+    margin-top: 30px;
+}
+
+.pagelinks ul {
+    list-style-type: none;
+}
+
+.pagelinks ul li {
+    margin-top: 25px;
+}
+
+/* .pagelinks ul li .linkcontainer {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 9px 16px 0 rgba(122, 122, 122, 0.09);
+} */
+.pagelinks ul li .linkcontainer a {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 9px 16px 0 rgba(122, 122, 122, 0.09);
+    display: block;
+}
+
+.pagelinks ul li .linkcontainer a:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+.pagelinks ul li a {
+    text-decoration: none;
+    white-space: nowrap;
+}
+.indexpage .linkcontainer h4{
+    font-family: 'Mulish-SemiBold';
+    line-height: normal;
+    letter-spacing: normal;
+    font-size: 18px;
+}
+/* department css start */
+.classdepimg img {
+    height: 15px;
+    width: 10px;
+
+}
+
+.department a {
+    text-decoration: none;
+    height: 85%;
+}
+
+/* department css :end */
+/* dashboard css start */
+a.boxcommon.d-block.linkdep img.depicon {
+
+    height: 35px;
+    ;
+
+}
+
+.ubinetdashboard {
+    color: #162027;
+    font-family: 'Mulish-ExtraBold';
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.dhgrasphtitle {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fadedd;
+    margin-right: 10%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.graphsection {
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 9px 16px 0 rgba(122, 122, 122, 0.09);
+}
+
+.graphcontainer {
+    padding-top: 10px;
+}
+
+.datacontainer {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.datacontainer::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    background-color: #b0bac9;
+    height: 1px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.dropdownyear .form-select {
+    background-color: #d1e2ff;
+    color: #00579c;
+    font-family: 'Mulish-ExtraBold';
+    border: 1px solid #00579c;
+}
+
+.leftsidesection {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 9px 16px 0 rgba(122, 122, 122, 0.09);
+}
+
+.todaysdate {
+    color: #162027;
+    font-size: 12px;
+    font-family: 'Mulish-Bold';
+}
+
+.todays {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 20PX; */
+
+}
+
+.latestupdatetop {
+    margin-bottom: 25px;
+}
+
+.latestupdate {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 9px 16px 0 rgba(122, 122, 122, 0.09);
+}
+
+.updatenewsholder p {
+    color: #162027;
+    font-size: 12px;
+    font-family: 'Mulish-Bold';
+}
+
+.datesection p {
+    font-size: 12px;
+    color: #48536a;
+    font-family: 'Mulish-SemiBold';
+    margin: 3px 0 0 5px;
+}
+
+.Learnmore {
+    margin-top: 27px;
+}
+
+.update {
+    padding-top: 15px;
+    margin-bottom: 15px;
+    border-top: 2px solid #b0bac9;
+
+}
+
+.mdsection img {
+    height: 110px;
+}
+
+.mdsection h5 {
+    font-family: 'Mulish-Bold';
+}
+
+.position {
+    font-size: 14px;
+    font-family: 'Mulish-SemiBold';
+}
+
+.unionites {
+    font-size: 12px;
+    font-family: 'Mulish-Bold';
+}
+
+.leftmargintop {
+    margin-top: 30px;
+
+
+}
+
+.leftmargintop.latestupdate.latesupdatesection ul {
+    max-height: 456px;
+    height: 100%;
+    overflow-y: overlay;
+}
+
+.leftmargintop.latestupdate.latesupdatesection ul li span {
+    cursor: pointer;
+}
+
+.mdsection.leftmargintop.latestupdate {
+    max-height: 575px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* slick slider.css start */
+
+.slick-dots li button:before {
+    font-size: 45px;
+}
+
+.slick-dots li {
+    margin: 0;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #da251c;
+}
+
+.slick-dots li button:before {
+    color: #da251c;
+}
+
+.slick-dots {
+    bottom: -35px;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 30px;
+}
+
+.ubibanner {
+    border: 1px solid #d1e2ff;
+    border-radius: 10px;
+}
+
+/* home page css start */
+.ubibanner .slick-next{
+    display: none;
+}
+.urls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.urls ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+
+    margin: 0;
+}
+
+.urls ul li {
+    font-size: 14px;
+    margin-right: 10px;
+    font-family: 'Mulish-SemiBold';
+    color: #48536a;
+}
+
+.urls ul li a {
+    text-decoration: none;
+    color: #48536a;
+}
+
+.urls ul li.activepage {
+    font-family: 'Mulish-Bold';
+}
+
+.cureentpage {
+    font-size: 16px;
+    font-family: 'Mulish-ExtraBold';
+    color: #162027;
+}
+
+.tabsection {
+    border-radius: 10px;
+    border: 0.2px solid #d1e2ff;
+    background-color: #e9f1ff;
+    margin-top: 20px;
+    padding: 20px;
+    height: 100%;
+}
+
+.tabsection .nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: white;
+    background-color: #00579c;
+    font-weight: 14px;
+    font-family: 'Mulish-Bold';
+    width: 100%;
+    text-align: left;
+}
+
+.tabsection .nav-link {
+    color: #162027;
+    font-size: 14px;
+    font-family: 'Mulish-Bold';
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+}
+
+.branch .tab-content {
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 9px 16px 0 rgba(122, 122, 122, 0.09);
+    background-color: #fff;
+    padding: 20px;
+    height: 100%;
+}
+
+.headingtab h6 {
+    font-family: 'Mulish-Bold';
+    font-size: 20px;
+}
+
+.sortdocument {
+    padding: 10px 15px;
+    border-radius: 7px;
+    background-color: #00579c;
+    color: #fff;
+    font-family: 'Mulish-Bold';
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.sortdocument img {
+    margin-left: 5px;
+}
+
+.nav-link.active span.check {
+    width: 10px;
+    height: 10px;
+    margin: 8px 20px 7px 0;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+.nav-link span.check {
+    width: 10px;
+    height: 10px;
+    margin: 8px 20px 7px 0;
+    border-radius: 2px;
+    background-color: #162027;
+
+}
+
+.documentholder {
+    list-style-type: none;
+    /* display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px; */
+    margin-top: 30px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+li.documentcontainer {
+    width: 48%;
+    margin-top: 30px;
+}
+
+li.documentcontainer:nth-child(2n+1) {
+    margin-right: 30px;
+}
+
+.documentholder li a {
+    padding: 15px;
+    border-radius: 10px;
+    border: solid 1px #d1e2ff;
+    background-color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    font-family: 'Mulish-SemiBold';
+    font-size: 14px;
+    color: #162027;
+}
+
+.icon-document {
+    height: 80px;
+    width: 80px;
+    background-color: #fff;
+    margin-right: 10px;
+}
+
+.icon-document img {
+    height: 15px;
+    width: 15px;
+}
+
+.documentcontainer span {
+    font-family: 'Mulish-SemiBold';
+    font-size: 14px;
+}
+
+.subdocumentcontainer {
+    padding: 15px;
+    border-radius: 10px;
+    border: solid 1px #d1e2ff;
+    background-color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    font-family: 'Mulish-SemiBold';
+    font-size: 14px;
+}
+
+.subdocumentcontainer h6 {
+    font-family: 'Mulish-ExtraBold';
+    color: #00579c;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.subdocumentcontainer h6::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    background-color: #d1e2ff;
+}
+
+.table>:not(caption)>*>* {
+    padding: 20px;
+}
+
+.table.myTable {
+    border-collapse: separate;
+    border-spacing: 0 25px;
+    padding: 10px;
+}
+
+.table.myTable tbody tr td {
+    padding: 15px;
+    border-radius: 10px;
+    border: solid 1px #d1e2ff;
+    background-color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 20px;
+
+}
+
+.myTable td a {
+    display: block;
+    font-family: 'Mulish-SemiBold';
+    font-size: 14px;
+    color: #162027;
+    text-decoration: none;
+
+}
+
+.table tr th {
+    border-bottom-width: 0;
+}
+
+.containereoftable {
+    display: flex;
+}
+
+/* home page css end */
+/*Retirement page css start */
+.retirement {
+    display: flex;
+    align-items: center;
+}
+
+.retirement h5 {
+    width: 35%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.box {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 9px 16px 0 rgba(122, 122, 122, 0.09);
+    margin-top: 20px;
+}
+
+.boxcommon {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 9px 16px 0 rgba(122, 122, 122, 0.09);
+    margin-top: 20px;
+}
+
+.boxcommon:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+/* css for table start */
+.table thead tr th {
+    background-color: #d1e2ff;
+    font-size: 16px;
+    font-family: 'Mulish-Bold';
+    color: #00579c;
+    padding: 1%;
+    text-align: center;
+}
+
+.table thead tr th:first-child {
+    border-top-left-radius: 10px;
+}
+
+.table thead tr th:last-child {
+    border-top-right-radius: 10px;
+}
+
+.table tbody tr td {
+    padding: 10px;
+    font-family: 'Mulish-Regular';
+    color: #162027;
+    font-size: 16px;
+    border: 0;
+}
+
+div.dataTables_wrapper div.dataTables_filter label,
+div.dataTables_wrapper div.dataTables_length label {
+    display: none;
+}
+
+div.dataTables_wrapper div.dataTables_info {
+    font-family: 'Mulish-Medium';
+}
+
+.page-item.disabled .page-link {
+    color: #151522;
+    border-color: #00579c;
+}
+
+.dataTables_paginate.paging_simple_numbers .pagination li a {
+    font-family: 'Mulish-SemiBold';
+
+}
+
+.page-item.active .page-link {
+    background-color: #00579c;
+}
+
+.paginate_button.page-item.previous a,
+.paginate_button.page-item.next a {
+    color: #00579c;
+}
+
+div#retirement_wrapper div:nth-child(3) {
+    margin-top: 50px;
+}
+
+table.dataTable thead>tr>th.sorting_asc:before,
+table.dataTable thead>tr>th.sorting_desc:after,
+table.dataTable thead>tr>td.sorting_asc:before,
+table.dataTable thead>tr>td.sorting_desc:after {
+    opacity: 10;
+}
+
+table.dataTable thead>tr>th.sorting:before,
+table.dataTable thead>tr>th.sorting_asc:before,
+table.dataTable thead>tr>th.sorting_desc:before,
+table.dataTable thead>tr>th.sorting_asc_disabled:before,
+table.dataTable thead>tr>th.sorting_desc_disabled:before,
+table.dataTable thead>tr>td.sorting:before,
+table.dataTable thead>tr>td.sorting_asc:before,
+table.dataTable thead>tr>td.sorting_desc:before,
+table.dataTable thead>tr>td.sorting_asc_disabled:before,
+table.dataTable thead>tr>td.sorting_desc_disabled:before,
+table.dataTable thead>tr>th.sorting:after,
+table.dataTable thead>tr>th.sorting_asc:after,
+table.dataTable thead>tr>th.sorting_desc:after,
+table.dataTable thead>tr>th.sorting_asc_disabled:after,
+table.dataTable thead>tr>th.sorting_desc_disabled:after,
+table.dataTable thead>tr>td.sorting:after,
+table.dataTable thead>tr>td.sorting_asc:after,
+table.dataTable thead>tr>td.sorting_desc:after,
+table.dataTable thead>tr>td.sorting_asc_disabled:after,
+table.dataTable thead>tr>td.sorting_desc_disabled:after {
+    color: #151522;
+    font-size: 18px;
+}
+
+.branchtable {
+    table-layout: fixed;
+}
+
+.branchtable tr td:first-child {
+    position: relative;
+}
+
+.branchtable tr td:first-child::after {
+    content: ':';
+    color: #162027;
+    position: absolute;
+
+    right: 0;
+}
+
+/* css for table end */
+/*Retirement page css end*/
+/* LOCATOR CSS START */
+.locator .tab-content {
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 9px 16px 0 rgba(122, 122, 122, 0.09);
+    background-color: #fff;
+}
+
+.locator .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.locator .nav-tabs {
+    border: 0;
+
+}
+
+.locator .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    font-family: 'Mulish-ExtraBold';
+    font-size: 16px;
+    color: #00579c;
+}
+
+.locator .nav-link {
+    border-radius: 0;
+    background-color: rgba(176, 186, 201, 0.09);
+    font-family: 'Mulish-SemiBold';
+    color: #48536a;
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+}
+
+/* LOCATOR CSS end */
+/* ecircular css start */
+.e-circularlis {
+    display: block;
+    cursor: pointer;
+    border-radius: 10px;
+    border: solid 1px #d1e2ff;
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    font-family: 'Mulish-SemiBold';
+    font-size: 16px;
+    color: #162027;
+    text-decoration: none;
+    margin-top: 25px;
+}
+
+/* .e-circularlist{
+    list-style-type: none;
+}
+.e-circularlist a{
+    border-radius: 10px;
+    border: solid 1px #d1e2ff;
+    background-color: #fff;
+    padding: 20px;
+}
+.e-circularlist li a{
+   
+   
+    cursor: pointer;
+    text-decoration: none;
+   
+}
+.e-circularlist li a span{
+    font-family: 'Mulish-SemiBold';
+    font-size: 16px;
+    color:#162027;
+} */
+/* ecircular css end */
+/* branch css start */
+.branchcontact {
+    border-radius: 10px;
+    box-shadow: 0 9px 16px 0 rgba(122, 122, 122, 0.09);
+    background-color: #fff;
+    padding: 2%;
+}
+
+.tollfreeno {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.tollfreeno li p {
+    margin-bottom: 0;
+    color: #162027;
+    font-family: 'Mulish-Bold';
+}
+
+.tollfreeno li {
+    width: 30%;
+    position: relative;
+}
+
+.tollfreeno li:nth-child(1)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #b0bac9;
+}
+
+.tollfreeno li:nth-child(3)::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #b0bac9;
+}
+
+.tollfreeno li:nth-child(3) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.brcontact span {
+    color: #00579c;
+    font-family: 'Mulish-Bold';
+}
+
+.tabheading {
+    font-size: 18px;
+    font-family: 'Mulish-Bold';
+}
+
+.bankbranchdt {
+    font-family: 'Mulish-SemiBold';
+    font-size: 16px;
+    color: #48536a;
+    width: 57%;
+}
+
+.notebranch {
+
+    background-color: rgba(122, 122, 122, 0.09);
+    padding: 2%;
+}
+
+.searchfield {
+    border-radius: 10px;
+    border: solid 1px #b0bac9;
+    background-color: #fff;
+    padding: 8px;
+    width: 50%;
+    font-family: 'Mulish-Bold';
+}
+
+.searchfield:focus-visible {
+    outline: 0;
+}
+
+.btnsearch {
+    margin-left: 30px;
+    padding: 1.1% 5%;
+}
+
+.notebranch p span {
+    font-family: 'Mulish-ExtraBold';
+    color: #48536a;
+    font-size: 16px;
+
+}
+
+.notebranch p {
+    font-family: 'Mulish-Bold';
+    color: #48536a;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.showbranch {
+    font-size: 16px;
+    font-family: 'Mulish-SemiBold';
+    color: #48536a;
+}
+
+.showbranch span {
+    font-size: 16px;
+    font-family: 'Mulish-ExtraBold';
+    color: #00579c;
+}
+
+.branchetail li {
+    background-color: rgba(122, 122, 122, 0.09);
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.branchetail li p {
+    color: #162027;
+    font-family: 'Mulish-Bold';
+    font-size: 14px;
+}
+
+.branchetail li span {
+    font-family: 'Mulish-ExtraBold';
+    color: #00579c;
+    font-size: 14px;
+}
+
+.branchetail li:not(:first-child) {
+    margin-left: 2%;
+}
+
+/* branch css end */
+/* impcorraspondance css start */
+.importantab {
+    width: 100%;
+}
+
+.importantab li {
+    width: 16.6%;
+}
+
+.docsub .boxcommon a {
+    text-decoration: none;
+}
+
+/* impcorraspondance css end*/
+/* footer section css start */
+.footersection {
+    position: fixed;
+    background-color: #162027;
+
+    bottom: 0;
+}
+
+/* footer section css end */
+/* rateandcharges css start */
+.table.ratecharges thead tr th {
+    background-color: transparent;
+    text-align: left;
+    padding: 0;
+}
+
+.ratechargescontainer {
+    padding: 20px;
+}
+
+.table.ratecharges thead tr th:first-child {
+    border-bottom: 1px solid #d1e2ff;
+}
+
+.table.ratecharges a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Mulish-SemiBold';
+    color: #162027;
+}
+
+.table.ratecharges a span {
+    height: unset;
+    width: unset;
+}
+
+/* rateandcharges css end */
+/* landing rates css start */
+.landinftbl p {
+    font-size: 18px;
+    color: #162027;
+    font-family: 'Mulish-SemiBold';
+    height: 60px;
+}
+
+/* landing rate css end */
+/* Director screen css start */
+.nav-pills .nav-link.active .directorimg {
+
+    border-radius: 7px;
+    border: 2.5px solid #00579c;
+    position: relative;
+}
+
+.nav-pills .nav-link.active .directorimg::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 100px solid #00579c;
+    border-bottom: 50px solid transparent;
+    border-top: 10px solid transparent;
+    border-right: 15px solid #00579c;
+    border-bottom: 10px solid transparent;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: -15px;
+}
+
+.dtm {
+    margin: 5% 0;
+}
+
+.mdsecimg {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid #00579c;
+}
+
+ul.dirctdetail li:nth-child(2) {
+    margin-left: 20px;
+}
+
+ul.dirctdetail li:nth-child(2) h5 {
+    font-family: 'Mulish-ExtraBold';
+    color: #162027;
+}
+
+ul.dirctdetail li:nth-child(2) P {
+    font-family: 'Mulish-Bold';
+    color: #00579c;
+}
+
+.infodirect {
+    color: #162027;
+    font-size: 16px;
+    font-family: 'Mulish-Medium';
+}
+
+.directorinfo .listinfodata ul li:nth-child(2) {
+    margin: 0;
+
+}
+
+.listinfodata {
+    list-style-type: square;
+}
+
+.directorname {
+    position: absolute;
+    bottom: 0;
+    background-color: #1c1c1c59 !important;
+    left: 0;
+    right: 0;
+
+    display: block;
+}
+
+.nav-link.scrolltop.active .directorname {
+    display: none !important;
+    position: absolute;
+    bottom: 0;
+    background-color: #1c1c1c59;
+    left: 0;
+    right: 0;
+
+}
+
+.bg-transparent.border-end-0.tabsection.dttab {
+    position: relative;
+}
+
+.directorimg {
+    position: relative;
+}
+
+.directorname p {
+    color: #fff;
+}
+
+/* Director css end */
+/* vision mission css start */
+.dhgrasphtitle.vimision {
+    margin-right: 2%;
+}
+
+.vision,
+.missioncontaint {
+    border-top: 1px solid #b0bac9;
+    padding-top: 3%;
+}
+
+.vision p {
+    position: relative;
+    color: #162027;
+    padding-left: 3%;
+    font-family: 'Mulish-Medium';
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.mission p {
+    color: #162027;
+    margin-top: 5px;
+    font-family: 'Mulish-Medium';
+}
+
+.vision p::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/quotes.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: contain;
+    left: 0;
+}
+
+.mission {
+    border: 1px solid #d1e2ff;
+    border-radius: 10px;
+}
+
+/* vision mission css end */
+/* Award section image css start */
+.imagecontainer {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.overlay-effect {
+    transition: all .4s linear;
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -o-transition: all .4s linear;
+}
+
+.overlay-effect {
+    width: 90%;
+    height: 90%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #00579c;
+    position: absolute;
+
+    border-radius: 5px;
+
+}
+
+.overlay-text-hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+
+}
+
+.imagecontainer:hover .overlay-text-hidden {
+    opacity: 0.85;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.border-white {
+    border: 1px solid white;
+    height: 90%;
+    border-radius: 5px;
+}
+
+.awardinfo h5 {
+    font-family: 'Mulish-ExtraBold';
+    color: #fff;
+    font-size: 14px;
+}
+
+.awardinfo p {
+    font-family: 'Mulish-SemiBold';
+    color: #fff;
+    font-size: 12px;
+}
+
+/* Award section image css end */
+/* overview css start */
+.about p::before {
+    content: '';
+    display: none;
+}
+
+.vision.border-0.history {
+    font-family: 'Mulish-Bold';
+    width: 85%;
+    position: relative;
+}
+
+.vision.border-0.history:after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    background-image: url(../img/gandhiji.png);
+    right: -130px;
+    top: -40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.ubinetdashboard.overviewside {
+    font-size: 16px;
+}
+
+
+.addressdetail h6 {
+    font-size: 14px;
+    font-family: 'Mulish-Bold';
+}
+
+.addressdetail P {
+    font-size: 12px;
+    font-size: 'Mulish-SemiBold';
+    padding: 0;
+}
+
+.addressdetail a {
+    text-decoration: none;
+}
+
+.registeroffice li {
+    display: flex;
+}
+
+.newlogo {
+
+    height: 77px;
+}
+
+.border-rightoverview {
+    border-right: 1px solid #ddd;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #ddd;
+}
+
+.didknow .slick-prev:before , .didknow .slick-next:before{
+    
+   
+    color: #00579c;
+   
+}
+.didknow .slick-prev, .didknow .slick-next{
+  
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    background-color: #d1e2ff;
+   
+    border: 1px solid #00579c;
+   
+}
+.indicate{
+    width: 50px;
+    height: 50px !important;
+   padding: 3px;
+    border-radius: 50px;
+    border: 1px solid #00579c;
+    margin: 0 auto;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: dashed;
+}
+.indicate span{
+    display: block;
+    background-color:#00579c;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+
+
+}
+.comonheight{
+    height: 260px;
+}
+.comonheight div:first-child{
+    height: 40%;
+}
+/* .comonheight div:last-child{
+    height: 40%;
+} */
+.comonheight div:nth-child(2){
+    height: 26%;
+}
+.dataslide  p{
+    font-size: 14px;
+}
+.indicate{
+    position: relative;
+}
+/* .indicate::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color:#00579c;
+} */
+.diduslist {
+    width: 100%;
+}
+.diduslist   li:first-child{
+    width: 40%;
+}
+.diduslist   li:first-child span{
+    width: 100%;
+    height: 1px;
+    background-color:#d1e2ff;
+    display: block;
+}
+.diduslist   li:last-child span{
+    width: 100%;
+    height: 1px;
+    background-color:#d1e2ff;
+    display: block;
+}
+.diduslist  li:last-child{
+    width: 40%;
+}
+.diduslist li:nth-child(2){
+    width: 20%;
+}
+/* overview css end */
+/* media query start */
+@media screen and (min-device-width: 991px) and (max-device-width: 1200px) {
+    header .ubilogo a img {
+        height: 70px;
+    }
+
+    header .headerlogo .ubinet {
+        height: 25px;
+    }
+
+    header .headerhandler::after {
+        left: 0;
+    }
+
+    header .headerhandler {
+        padding: 0 20px;
+    }
+
+    .headercontact_info--contact li {
+        font-size: 12px;
+    }
+
+    .headercontact_info--helpline {
+        font-size: 10px;
+    }
+}
+
+@media(max-width:991px) {
+    header .headerhandler::after {
+        display: none;
+    }
+
+    header .headerhandler {
+        padding: 0;
+    }
+
+    header .ubilogo a img {
+        height: 80px;
+    }
+
+    header .headerlogo .ubinet {
+        height: 30px;
+    }
+
+    .headercontact_info--helpline {
+        font-size: 10px;
+    }
+
+    .headercontact_info--contact li {
+        font-size: 12px;
+    }
+
+    .dash_list a {
+        padding: 10px;
+    }
+
+    .notification {
+        background-size: 100% 100%;
+    }
+
+    .notification p {
+        font-size: 12px;
+    }
+
+    .dropdownyear .form-select {
+        font-size: 14px;
+    }
+
+    .datacontaint .mdsection.leftmargintop.latestupdate {
+        max-height: unset;
+        height: unset;
+    }
+}
+
+@media (max-width: 560px) {
+
+    .navbar>.container,
+    .navbar>.container-fluid,
+    .navbar>.container-lg,
+    .navbar>.container-md,
+    .navbar>.container-sm,
+    .navbar>.container-xl,
+    .navbar>.container-xxl {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width:768px) {
+    .headerlogo {
+        flex-direction: column;
+    }
+
+    header .headerlogo .ubinet {
+        width: 120px;
+    }
+
+    .search {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .contactdetail {
+        margin-top: 10px;
+    }
+
+    .headercontact_info--contact li:nth-child(1) {
+        margin-left: 0;
+    }
+
+    .headercontact_info--helpline {
+        text-align: start;
+    }
+}
+
+@media (max-width:420px) {
+    header .headerlogo .ubinet {
+        height: 20px;
+        width: 70px;
+    }
+    .footersection{
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 100%;
+        
+
+    }
+}
+
+@media (min-width: 1300px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1366px;
+        padding: 0;
+    }
+}
+
+@media (min-width: 1500px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1666px;
+        padding: 0;
+    }
+}
+
+/* media query end */
+@media (max-width: 1053px) {
+    .sidebar {
+        width: 180px;
+    }
+
+    .dash_list a span img {
+        height: 20px;
+    }
+
+    .dash_list a span {
+        margin-right: 10px;
+    }
+
+    .dash_list .accordion-button::after {
+
+        /* margin-left: -30px;
+        padding-right: 35px; */
+    }
+
+    .dash_list .accordion-button:not(.collapsed)::after {
+        margin-right: 20px;
+    }
+
+    .maincontaint {
+        margin-left: 180px;
+    }
+}
+
+/* media queries for font siuz in 1366px  */
+@media (max-width: 1366px) {
+    h5 {
+        font-size: 18px;
+    }
+
+    h6 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+
+    .headercontact_info--contact li {
+        font-size: 12px;
+    }
+
+    .ubinetdashboard {
+        font-size: 16px;
+    }
+
+    .dhgrasphtitle {
+        padding: 10px;
+    }
+
+    .updatenewsholder p {
+        font-size: 11px;
+    }
+
+    .todaysdate {
+        font-size: 11px;
+    }
+
+    .leftmargintop {
+        margin-top: 18px;
+    }
+
+    .latestupdatetop {
+        margin-bottom: 18px;
+    }
+
+    .btn_primary {
+        font-size: 11px;
+    }
+
+    .sidebar {
+        width: 245px;
+    }
+
+    .maincontaint {
+        margin-left: 245px;
+    }
+
+    .mdsection.leftmargintop.latestupdate {
+        height: 46%;
+    }
+
+    .position {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:1200px) {
+    .mdsection.leftmargintop.latestupdate {
+
+        height: 40%;
+    }
+
+    .mdsection img {
+        height: 55px;
+    }
+
+    .mdsection h5 {
+        font-size: 14px;
+    }
+}
+
+@media (min-width:576px) {
+
+    .container,
+    .container-sm {
+        max-width: unset;
+    }
+}

@@ -1,0 +1,3317 @@
+/* UI Devloper:Rohan Mahadik */
+/* Starting Date:1/09/2022 */
+/* Stylesheet for UBINET*/
+@font-face {
+    font-family: 'Mulish-Bold';
+    src: url('../font/Mulish-Bold.eot');
+    src: url('../font/Mulish-Bold.eot?#iefix') format('embedded-opentype'), url('../font/Mulish-Bold.woff2') format('woff2'), url('../font/Mulish-Bold.woff') format('woff'), url('../font/Mulish-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish-ExtraBold';
+    src: url('../font/Mulish-ExtraBold.eot');
+    src: url('../font/Mulish-ExtraBold.eot?#iefix') format('embedded-opentype'), url('../font/Mulish-ExtraBold.woff2') format('woff2'), url('../font/Mulish-ExtraBold.woff') format('woff'), url('../font/Mulish-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish-Medium';
+    src: url('../font/Mulish-Medium.eot');
+    src: url('../font/Mulish-Medium.eot?#iefix') format('embedded-opentype'), url('../font/Mulish-Medium.woff2') format('woff2'), url('../font/Mulish-Medium.woff') format('woff'), url('../font/Mulish-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish-Regular';
+    src: url('../font/Mulish-Regular.eot');
+    src: url('../font/Mulish-Regular.eot?#iefix') format('embedded-opentype'), url('../font/Mulish-Regular.woff2') format('woff2'), url('../font/Mulish-Regular.woff') format('woff'), url('../font/Mulish-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish-SemiBold';
+    src: url('../font/Mulish-SemiBold.eot');
+    src: url('../font/Mulish-SemiBold.eot?#iefix') format('embedded-opentype'), url('../font/Mulish-SemiBold.woff2') format('woff2'), url('../font/Mulish-SemiBold.woff') format('woff'), url('../font/Mulish-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../font/icomoon/icomoon.eot?pcyvbe');
+    src: url('../font/icomoon/icomoon.eot?pcyvbe#iefix') format('embedded-opentype'), url('../font/icomoon/icomoon.ttf?pcyvbe') format('truetype'), url('../font/icomoon/icomoon.woff?pcyvbe') format('woff'), url('../font/icomoon/icomoon.svg?pcyvbe#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-weight: 400;
+    background-color: #f5f7fb;
+    font-family: 'Mulish-Regular';
+    font-size: 1.8rem;
+    color: #162027;
+    letter-spacing: normal;
+    overflow-x: hidden;
+    font-synthesis: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    max-width: 190rem;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-weight: 400;
+    background-color: #f5f7fb;
+    font-family: 'Mulish-Regular';
+    font-size: 1.8rem;
+    color: #162027;
+    letter-spacing: normal;
+    overflow-x: hidden;
+    font-synthesis: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    max-width: 190rem;
+    padding: 0;
+}
+
+h1,
+h2.h3,
+h4,
+h5,
+h6 {
+    color: #162027;
+}
+
+P {
+    font-size: 1.4rem;
+    letter-spacing: 0.83px;
+    line-height: 2.7rem;
+}
+
+a:hover {
+    color: #162027;
+}
+
+h4,
+.commonheadingtitle {
+    font-size: 1.8rem;
+    line-height: normal;
+    letter-spacing: 0.82px;
+    font-family: 'Mulish-ExtraBold';
+}
+
+.list_fonmtsize li {
+    font-size: 1.4rem;
+}
+
+.btn_primary {
+    background-color: #00579c;
+    color: #ffff;
+    font-family: 'Mulish-Bold';
+    font-size: 1.3rem;
+}
+
+.btn_primary:hover {
+    color: #ffff;
+}
+
+.btn_secondry {
+    background-color: #d1e2ff;
+    color: #00579c;
+    border: 1px solid #00579c;
+    font-family: 'Mulish-Bold';
+    font-size: 1.3rem;
+}
+
+.btn_secondry:hover {
+    color: #00579c;
+}
+
+/* css for screen 1600px desktop */
+header .ubilogo a img {
+    height: 8.5rem;
+}
+
+header nav {
+    box-shadow: 33px 8px 26px 0 rgb(175 175 175 / 9%);
+    background-color: #fff;
+}
+
+header .headerhandler {
+    padding: 0 4.0rem;
+    position: relative;
+    width: 100%;
+}
+
+header .headerlogo .ubinet {
+    height: 4.0rem;
+}
+
+header .search {
+    position: relative;
+    box-shadow: 0 0 40px rgb(51 51 51 / 10%);
+    height: 3.5rem;
+}
+
+.headercontact_info--helpline {
+
+    font-family: 'Mulish-SemiBold';
+    text-align: end;
+}
+
+.headercontact_info--contact li {
+    font-family: 'Mulish-Bold';
+
+    margin-left: 1.0rem;
+    position: relative;
+}
+
+header .headerhandler::after {
+    content: "";
+    position: absolute;
+    left: 1.7rem;
+    height: 80%;
+    width: 0.2rem;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(175 175 175 / 15%);
+}
+
+header input.form-control.search_bar {
+    border-right: 1px solid #b0bac9;
+    border-radius: 1rem;
+    text-indent: 2.5rem;
+    font-family: 'Mulish-SemiBold';
+    font-size: 1.4rem;
+    height: 3.5rem;
+}
+
+header .search .bi-search {
+    position: absolute;
+    top: 22%;
+    left: 1rem;
+}
+
+.search button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    background: #00579c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .search button img {
+    height: 1.5rem;
+}
+
+header .headercontact_info--contact li:nth-child(3)::after {
+    content: '';
+    height: 1.1rem;
+    width: 0.2rem;
+    background-color: #162027;
+    position: absolute;
+    left: -0.5rem;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+header .headercontact_info--contact li:nth-child(3)::before {
+    content: '';
+    height: 1.1rem;
+    width: 0.2rem;
+    background-color: #162027;
+    position: absolute;
+    right: -0.5rem;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+header .form-control::placeholder {
+    color: #48536a;
+    font-family: 'Mulish-Medium';
+    font-size: 1.2rem;
+}
+
+header .bi-search::before {
+    font-size: 1.4rem;
+}
+
+header .emrcell {
+    width: 15px;
+    height: 15px;
+}
+
+/* Css start for header */
+/* scrollbar css start */
+::-webkit-scrollbar {
+    width: 5px;
+    /* border-radius: 50%; */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* border-radius: 50%; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background:
+        #b0bac9;
+    border-radius: 5rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* scrollbar css end */
+/* sidebar css start */
+main {
+    overflow: hidden;
+}
+
+.sidebar {
+    position: fixed;
+    background-color: #fff;
+    height: 100%;
+    width: 30rem;
+    overflow-y: auto;
+    box-shadow: 0 8px 26px 0 rgb(175 175 175 / 9%);
+}
+
+.sidebar_content {
+    margin-bottom: 20rem;
+}
+
+.dash_list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    /* margin: 0 10px; */
+}
+
+.dash_list a {
+    text-decoration: none;
+    font-family: 'Mulish-SemiBold';
+    font-size: 1.5rem;
+    color: #162027;
+    padding: 1rem 3.5rem;
+}
+
+.dash_list a span {
+    margin-right: 2rem;
+}
+
+.accordianborder {
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+.border-top {
+    border-top: 1px solid #dee2e6;
+}
+
+.dash_list .accordion-button:not(.collapsed)::after {
+    content: url(../img/arrowdown.png);
+    background-image: none;
+    transform: rotate(180deg);
+}
+
+.dash_list .accordion-button::after {
+    content: url(../img/arrowdown.png);
+    background-image: none;
+    /* margin-left: -58px; */
+    position: absolute;
+    right: 0;
+    margin: 0 2rem;
+}
+
+.sublistmenu {
+    list-style-type: none;
+    padding: 0 0 0 25%;
+}
+
+.sublistmenu li {
+    border-bottom: 1px solid #ddd;
+}
+
+.sublistmenu li a {
+    display: block;
+    text-decoration: none;
+    font-family: 'Mulish-Medium';
+    padding: 1rem;
+    font-size: 1.4rem;
+}
+
+.sublistmenu li a:hover {
+    background-color: rgba(218, 37, 28, 0.15);
+}
+
+.sidebar_content .accordion-button:active {
+    background-color: rgba(218, 37, 28, 0.15);
+}
+
+.arrow.dash_list .accordion-button::after {
+    display: none;
+}
+
+.dwidth {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.accordion-button:hover {
+    background-color: rgba(218, 37, 28, 0.15);
+    border-radius: 5px;
+}
+
+.dash_list .accordion-button.active,.sublistmenu li a:active{
+    background-color: rgba(218, 37, 28, 0.15);
+}
+
+#accordionFlushExample {
+    margin: 1rem;
+}
+
+.dash_list .active.accordion-button,.sublistmenu li a.active{
+    position: relative;
+    display: block;
+}
+
+.dash_list .accordion-button.active::after,.sublistmenu li a.active::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: red;
+    right: 0;
+    display: block;
+    margin: 0;
+    top: 0;
+}
+
+/* sidebar css end */
+/* main content css start */
+.maincontaint {
+    margin-left: 30rem;
+}
+
+.dataholder {
+    padding: 2.5%;
+}
+
+.datacontaint {
+    margin: 2% 0 5% 0;
+}
+
+/* main content css end */
+
+/* notification css start */
+.notification {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 2rem;
+    height: 11.5rem;
+    background-image: url(../img/notification.png);
+    background-size: cover;
+    height: auto;
+}
+
+.notification h4 {
+    font-family: 'Mulish-Bold';
+    color: #fff;
+    animation: 2s slide-right;
+}
+
+#notification-msghidden {
+    visibility: hidden;
+}
+
+.notification p {
+    color: #fff;
+    font-family: 'Mulish-Medium';
+    padding: 0 8.5rem 0 0;
+
+}
+
+/* notification css end */
+/* footer section css start */
+.footersection {
+    position: fixed;
+    background-color: #162027;
+
+    bottom: 0;
+}
+
+.footersection h6 {
+    font-size: 1.6rem;
+}
+
+/* Index page css start */
+/* Banner css start */
+
+
+.indexpage .slick-dots li button:before {
+    font-size: 4.5rem;
+}
+
+.indexpage .slick-dots li {
+    margin: 0;
+}
+
+.indexpage .slick-dots li.slick-active button:before {
+    color: #da251c;
+}
+
+.indexpage .slick-dots li button:before {
+    color: #da251c;
+}
+
+.indexpage .slick-dots {
+    bottom: -3.5rem;
+}
+
+.indexpage .slick-dotted.slick-slider {
+    margin-bottom: 3.0rem;
+    height: 29rem;
+
+}
+
+.indexpage .slick-list {
+    height: 100%;
+}
+
+.indexpage .ubibanner {
+    border: 1px solid #d1e2ff;
+    border-radius: 1rem;
+}
+
+.indexpage .slick-slide img,
+.slick-track {
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.indexpage .slick-slide img {
+    border-radius: 1rem;
+    width: 100%;
+}
+
+/* .indexpage .slick-prev:before,
+.slick-next:before {
+    display: none;
+} */
+
+/* Banner css end */
+
+.indexpage .pagelinks {
+    margin-top: 30px;
+}
+
+.indexpage .pagelinks ul {
+    list-style-type: none;
+}
+
+.indexpage .pagelinks ul li .linkcontainer a {
+
+    display: block;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.indexpage .pagelinks ul li {
+    margin-top: 25px;
+}
+
+.indexpage .linkcontainer h4 {
+    font-family: 'Mulish-SemiBold';
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.indexpage .row10 {
+    --bs-gutter-x: 2.5rem;
+}
+
+.indexpage .graphsection {
+    margin-top: 3rem;
+
+    box-shadow: 0 9px 16px 0 rgb(122 122 122 / 9%);
+}
+
+.datacontainer {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.commonbck {
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 2.5rem;
+    box-shadow: 0 9px 16px 0 rgb(122 122 122 / 9%);
+}
+
+.indexpage .ubinetdashboard {
+    font-family: 'Mulish-ExtraBold';
+
+
+}
+
+.indexpage .dhgrasphtitle,
+.iconcontaint {
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: #fadedd;
+    margin-right: 3%;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.indexpage .datacontainer::after {
+    content: '';
+    position: absolute;
+    bottom: -2rem;
+    background-color: #b0bac9;
+    height: 0.1rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.indexpage .dropdownyear .form-select {
+    background-color: #d1e2ff;
+    color: #00579c;
+    font-family: 'Mulish-ExtraBold';
+    border: 1px solid #00579c;
+    font-size: 1.5rem;
+}
+
+.indexpage .todaysdate {
+    color: #162027;
+    font-size: 1.2rem;
+    font-family: 'Mulish-Bold';
+    letter-spacing: normal;
+    line-height: normal
+}
+
+.indexpage .todays {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 20PX; */
+
+}
+
+.indexpage .leftmargintop {
+    margin-top: 3rem;
+}
+
+.indexpage .latestupdatetop {
+    margin-bottom: 2.5rem;
+}
+
+.indexpage .leftmargintop.latestupdate.latesupdatesection ul {
+    max-height: 45.6rem;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.indexpage .update {
+    padding-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-top: 2px solid #b0bac9;
+}
+
+.indexpage .updatenewsholder p {
+    color: #162027;
+    font-size: 1.2rem;
+    font-family: 'Mulish-Bold';
+    line-height: 1.5;
+    letter-spacing: 0.18px;
+}
+
+.indexpage .leftmargintop.latestupdate.latesupdatesection ul li span {
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.indexpage .datesection p {
+    font-size: 1.2rem;
+    color: #48536a;
+    font-family: 'Mulish-SemiBold';
+    margin: 3px 0 0 5px;
+    line-height: 1.5;
+    letter-spacing: 0.18px;
+}
+
+.indexpage .mdsection img {
+    height: 100%;
+    border-radius: 50px;
+}
+
+.indexpage .position {
+    font-size: 1.4rem;
+    font-family: 'Mulish-SemiBold';
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.indexpage .alwomwn {
+    font-size: 1.6rem;
+    font-family: 'Mulish-ExtraBold';
+    margin-bottom: 3rem;
+}
+
+.indexpage .mdthought {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50px;
+    border: 1px solid #00579c;
+    margin: 0 auto;
+}
+
+.indexpage .mdsection {
+    margin-top: 3rem;
+}
+
+.indexpage .linkcontainer img {
+    height: 4rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.indexpage .pagelinks ul li .linkcontainer a:hover {
+    box-shadow: 0 0 11px rgb(33 33 33 / 20%);
+}
+
+/* Index css end */
+/* Home page css start */
+.urls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.urls ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin: 0;
+    flex-wrap: wrap;
+
+}
+
+.urls ul li {
+    font-size: 1.4rem;
+    margin-right: 1rem;
+    font-family: 'Mulish-SemiBold';
+    color: #48536a;
+    white-space: nowrap;
+}
+
+.cureentpage {
+    font-size: 1.6rem;
+    font-family: 'Mulish-ExtraBold';
+    color: #162027;
+}
+
+.tabsection {
+    border-radius: 1rem;
+    border: 0.2px solid #d1e2ff;
+    background-color: #e9f1ff;
+    margin-top: 2rem;
+    padding: 2rem;
+    height: 100%;
+}
+
+.branch .tabcomoon.tab-content {
+    margin-top: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 9px 16px 0 rgb(122 122 122 / 9%);
+    background-color: #fff;
+    padding: 2rem;
+    height: 100%;
+}
+
+.tabsection .nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: white;
+    background-color: #00579c;
+    /* font-weight: 1.4rem; */
+    font-family: 'Mulish-Bold';
+    width: 100%;
+    text-align: left;
+}
+
+.nav-link.active span.check {
+    width: 1rem;
+    height: 1rem;
+    margin: 0.8rem 2rem 0.7rem 0;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+.tabsection .nav-link {
+    color: #162027;
+    font-size: 1.4rem;
+    font-family: 'Mulish-Bold';
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+}
+
+.sortdocument {
+    padding: 1rem 1.5rem;
+    border-radius: 0.7rem;
+    background-color: #00579c;
+    color: #fff;
+    font-family: 'Mulish-Bold';
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.tabsection .nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: white;
+    background-color: #00579c;
+    /* font-weight: 1.4rem; */
+    font-family: 'Mulish-Bold';
+    width: 100%;
+    text-align: left;
+}
+
+.containereoftable {
+    display: flex;
+}
+
+.table.myTable {
+    border-collapse: separate;
+    border-spacing: 0 2.5rem;
+    padding: 1rem;
+    position: relative;
+    top: -3rem;
+}
+
+.branch table.myTable tbody tr td {
+
+    border-radius: 10px;
+    border: solid 1px #d1e2ff;
+    background-color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 2rem;
+}
+
+.nav-link span.check {
+    width: 1rem;
+    height: 1rem;
+    margin: 0.8rem 2rem 0.7rem 0;
+    border-radius: 2px;
+    background-color: #162027;
+}
+
+.myTable td a {
+    display: block;
+    font-family: 'Mulish-SemiBold';
+    font-size: 1.4rem;
+    color: #162027;
+    text-decoration: none;
+}
+
+.icon-document img {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.urls ul li.activepage {
+    font-family: 'Mulish-Bold';
+}
+
+.urls ul li a {
+    text-decoration: none;
+    color: #48536a;
+}
+
+.branch .table>:not(:last-child)>:last-child>* {
+    border: 0;
+}
+
+.icon-document {
+    margin-right: 1rem;
+}
+
+/* Home page css end */
+/* E-Circular css start */
+.e-circularlis {
+    display: block;
+    cursor: pointer;
+    border-radius: 1rem;
+    border: solid 1px #d1e2ff;
+    background-color: #fff;
+    padding: 2rem;
+    width: 100%;
+    font-family: 'Mulish-SemiBold';
+    font-size: 1.4rem;
+    color: #162027;
+    text-decoration: none;
+    margin-top: 2.5rem;
+}
+
+.ecircularpage .commonbck,
+.retirement .commonbck {
+    margin-top: 2rem;
+}
+
+.ecircularpage .row10 {
+    --bs-gutter-x: 2rem;
+}
+
+/* E-circular css end */
+/* E-mannual css start */
+.descriptionmannual.border-blue {
+    padding: 1.5rem;
+}
+
+.border-blue {
+    border: 1px solid #d1e2ff;
+    border-radius: 1rem;
+}
+
+.descriptionmannual.border-blue h5 {
+    padding-bottom: 0.5rem;
+}
+
+.emanuallist ul {
+    list-style-type: none;
+    padding: 0;
+    border-top: 1px solid #d1e2ff;
+}
+
+.emanuallist ul li {
+    margin-top: 1.5rem;
+}
+
+.emanuallist ul li a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-family: 'Mulish-SemiBold';
+    color: #162027;
+}
+
+.heading-blue {
+    color: #00579c;
+    font-family: 'Mulish-ExtraBold';
+
+}
+
+.updatelatest ul li {
+    border-top: 1px solid #b0bac9;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+.updatelatest ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.emanualpage .updatenewsholder span {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* E-manual css end */
+/* Retirement css start */
+.retirement .notification h4 {
+    width: 35%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Retirement css end */
+/* iphone css start */
+.tab-content {
+    margin-top: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 9px 16px 0 rgb(122 122 122 / 9%);
+    background-color: #fff;
+    padding: 2rem;
+    height: 100%;
+}
+
+.search {
+    position: relative;
+    box-shadow: 0 0 40px rgb(51 51 51 / 10%);
+    height: 3.5rem;
+}
+
+.search .bi-search {
+    position: absolute;
+    top: 25%;
+    left: 1rem;
+    font-size: 1.5rem;
+}
+
+.search button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    background: #00579c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-control::placeholder {
+    color: #48536a;
+    font-family: 'Mulish-Medium';
+    font-size: 1.2rem;
+}
+
+.search button img {
+    height: 1.5rem;
+}
+
+.iphonespages input.form-control {
+    height: 3.5rem;
+}
+
+input.form-control.search_bar {
+    border-right: 1px solid #b0bac9;
+    border-radius: 1rem;
+    text-indent: 2rem;
+    font-family: 'Mulish-SemiBold';
+    font-size: 1.4rem;
+    height: 3.5rem;
+}
+
+/* iphone css end */
+/* locator css start */
+.locator .nav-tabs {
+    border: 0;
+}
+
+.locator .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    font-family: 'Mulish-ExtraBold';
+    font-size: 1.6rem;
+    color: #00579c;
+}
+
+.locator .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border: 0;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.locator .nav-link {
+    border-radius: 0;
+    background-color: rgba(176, 186, 201, 0.09);
+    font-family: 'Mulish-SemiBold';
+    color: #48536a;
+    font-size: 1.6rem;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+}
+
+.locator .tab-content {
+    background-color: #fff;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow: 0 9px 16px 0 rgb(122 122 122 / 9%);
+    background-color: #fff;
+    border-radius: unset;
+    margin-top: 0;
+}
+
+/* locator css end */
+/* DEPARTMENT CSS START */
+.department a {
+    text-decoration: none;
+    height: 85%;
+}
+
+.department .boxcommon:hover {
+    box-shadow: 0 0 11px rgb(33 33 33 / 20%);
+}
+
+.department .boxcommon,
+.downloads .boxcommon {
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 9px 16px 0 rgb(122 122 122 / 9%);
+    margin-top: 2rem;
+}
+
+.department a.boxcommon.d-block.linkdep img.depicon {
+    height: 35px;
+}
+
+.classdepimg img {
+    height: 1.5rem;
+    width: 1rem;
+}
+
+.department .boxcommon h4 {
+    font-family: 'Mulish-SemiBold';
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+/* DEPARTMENT CSS END */
+/* Downloads css :start */
+.downloads .boxcommon {
+    padding: 1.8rem;
+}
+
+.downloaddoc li:nth-child(2) {
+    margin-left: 5%;
+}
+
+.downloads a {
+    text-decoration: none;
+}
+
+.downloaddoc li p {
+    font-size: 1.4rem;
+    color: #162027;
+    font-family: "Mulish-SemiBold";
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.titledoc .formdownloaddoc {
+    color: #00579c;
+    font-family: 'Mulish-Bold';
+    font-size: 1.8rem;
+}
+
+.downloadmt {
+    margin-top: 1.8rem;
+}
+
+.titledoc {
+    border-bottom: 1.5px solid #d1e2ff;
+    padding-bottom: 1rem;
+}
+
+/* Download css end */
+/* branch page  css start */
+.bankbranchdt {
+    font-family: 'Mulish-SemiBold';
+    font-size: 1.6rem;
+    color: #48536a;
+    width: 57%;
+    letter-spacing: normal;
+}
+
+.notebranch {
+    background-color: rgba(122, 122, 122, 0.09);
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.searchfield {
+    border-radius: 1rem;
+    border: solid 1px #b0bac9;
+    background-color: #fff;
+    padding: 0.8rem;
+    width: 50%;
+    font-family: 'Mulish-Bold';
+    height: 4rem;
+    font-size: 1.8rem;
+}
+
+.searchfield::placeholder {
+    font-size: 1.6rem;
+}
+
+.btnsearch {
+    margin-left: 3rem;
+    padding: 1.1% 5%;
+}
+
+.showbranch li {
+    font-size: 1.6rem;
+    font-family: 'Mulish-SemiBold';
+    color: #48536a;
+    display: flex;
+    align-items: baseline;
+}
+
+.showbranch span {
+    font-size: 1.6rem;
+    font-family: 'Mulish-ExtraBold';
+    color: #00579c;
+}
+
+.branchetail li {
+    background-color: rgba(122, 122, 122, 0.09);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.branchetail li p {
+    color: #162027;
+    font-family: 'Mulish-Bold';
+    font-size: 1.4rem;
+}
+
+.branchetail li {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.branchetail li:not(:first-child) {
+    margin-left: 1.5%;
+}
+
+.branchetail li span {
+    font-family: 'Mulish-ExtraBold';
+    color: #00579c;
+    font-size: 1.4rem;
+}
+
+.notebranch p {
+    font-family: 'Mulish-ExtraBold';
+    color: #48536a;
+    font-size: 1.6rem;
+    letter-spacing: normal;
+}
+
+.notebranch p span {
+    font-family: 'Mulish-ExtraBold';
+    color: #48536a;
+
+}
+
+.showbranch li p {
+    font-family: 'Mulish-SemiBold';
+    font-size: 1.6rem;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.branchcontact {
+    border-radius: 1rem;
+    box-shadow: 0 9px 16px 0 rgb(122 122 122 / 9%);
+    background-color: #fff;
+    padding: 2%;
+}
+
+.tollfreeno {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.tollfreeno li {
+    width: 30%;
+    position: relative;
+}
+
+.tollfreeno li p {
+    margin-bottom: 0;
+    color: #162027;
+    font-family: 'Mulish-Bold';
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.brcontact span {
+    color: #00579c;
+    font-family: 'Mulish-Bold';
+    font-size: 1.6rem;
+}
+
+.tollfreeno li:nth-child(1)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 0.2rem;
+    height: 100%;
+    background-color: #b0bac9;
+}
+
+.tollfreeno li:nth-child(3) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tollfreeno li:nth-child(3)::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0.2rem;
+    height: 100%;
+    background-color: #b0bac9;
+}
+
+/* branch page css end */
+/* table css start */
+.table thead tr th:first-child {
+    border-top-left-radius: 10px;
+}
+
+.table thead tr th {
+    background-color: #d1e2ff;
+    font-size: 1.6rem;
+    font-family: 'Mulish-Bold';
+    color: #00579c;
+    padding: 1%;
+    text-align: center;
+}
+
+.table thead tr th:last-child {
+    border-top-right-radius: 10px;
+}
+
+div.dataTables_wrapper div.dataTables_filter label,
+div.dataTables_wrapper div.dataTables_length label {
+    display: none;
+}
+
+div.dataTables_wrapper div.dataTables_filter label,
+div.dataTables_wrapper div.dataTables_length label {
+    display: none;
+}
+
+.table tbody tr td {
+    padding: 1rem;
+    font-family: 'Mulish-Regular';
+    color: #162027;
+    font-size: 1.6rem;
+    border: 0;
+}
+
+div.dataTables_wrapper div.dataTables_info {
+    font-family: 'Mulish-Medium';
+    font-size: 1.6rem;
+}
+
+.dataTables_paginate.paging_simple_numbers .pagination li a {
+    font-family: 'Mulish-SemiBold';
+    font-size: 1.6rem;
+}
+
+.page-item.active .page-link {
+    background-color: #00579c;
+}
+
+.paginate_button.page-item.previous a,
+.paginate_button.page-item.next a {
+    color: #00579c;
+}
+
+.page-item.disabled .page-link {
+    color: #151522;
+    border-color: #00579c;
+}
+
+.page-item:first-child .page-link {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+    border-style: unset;
+}
+
+
+/* table css end */
+/* Annimation start */
+@keyframes circle {
+    0% {
+        transform: rotate(0deg) translate(-165px) rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg) translate(-165px) rotate(-360deg);
+    }
+}
+
+@keyframes slide-right {
+    from {
+        margin-left: -100%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
+@keyframes slide-left {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
+.slideDown {
+    animation-name: slideDown;
+    -webkit-animation-name: slideDown;
+
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+
+    visibility: visible !important;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    50% {
+        transform: translateY(8%);
+    }
+
+    65% {
+        transform: translateY(-4%);
+    }
+
+    80% {
+        transform: translateY(4%);
+    }
+
+    95% {
+        transform: translateY(-2%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slideDown {
+    0% {
+        -webkit-transform: translateY(-100%);
+    }
+
+    50% {
+        -webkit-transform: translateY(8%);
+    }
+
+    65% {
+        -webkit-transform: translateY(-4%);
+    }
+
+    80% {
+        -webkit-transform: translateY(4%);
+    }
+
+    95% {
+        -webkit-transform: translateY(-2%);
+    }
+
+    100% {
+        -webkit-transform: translateY(0%);
+    }
+}
+
+/* Annimation end */
+/* DC link css start */
+.dclinks .downloaddoc li:nth-child(2) {
+    margin-left: 5%;
+}
+
+.dclinks .downloaddoc li img {
+    height: 20px;
+    width: 20px;
+}
+
+.dclinks .boxcommon {
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 9px 16px 0 rgb(122 122 122 / 9%);
+    margin-top: 2rem;
+}
+
+.dclinks .border-blue {
+    border: 1px solid #d1e2ff;
+    border-radius: 10px;
+}
+
+.dclinks .downloaddoc li img {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* DC css end */
+/* Overview css start */
+
+.about p::before {
+    content: '';
+    display: none;
+}
+
+.vision,
+.missioncontaint {
+    border-top: 1px solid #b0bac9;
+    padding-top: 3%;
+}
+
+.vision.border-0.history {
+    font-family: 'Mulish-Bold';
+    width: 85%;
+    position: relative;
+}
+
+.vision.border-0.history:after {
+    content: '';
+    position: absolute;
+    width: 15rem;
+    height: 20rem;
+    background-image: url(../img/gandhiji.png);
+    right: -13rem;
+    top: -4rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.ubinetdashboard.overviewside {
+    font-size: 1.6rem;
+}
+
+
+.overviewpage .addressdetail h6 {
+    font-size: 1.4rem;
+    font-family: 'Mulish-Bold';
+}
+
+.overviewpage .addressdetail P {
+    font-size: 1.2rem;
+    font-family: 'Mulish-SemiBold';
+    padding: 0;
+    letter-spacing: normal;
+    line-height: 2.4rem;
+}
+
+.overviewpage .addressdetail a {
+    text-decoration: none;
+}
+
+.registeroffice li {
+    display: flex;
+}
+
+.newlogo {
+
+    height: 7.7rem;
+}
+
+.border-rightoverview {
+    border-right: 1px solid #ddd;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #ddd;
+}
+
+.didknow .slick-prev:before,
+.didknow .slick-next:before {
+
+
+    color: #00579c;
+
+}
+
+.didknow .slick-prev,
+.didknow .slick-next {
+
+    border-radius: 5rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: #d1e2ff;
+
+    border: 1px solid #00579c;
+
+}
+
+.indicate {
+    width: 5rem;
+    height: 5rem !important;
+    padding: 0.3rem;
+    border-radius: 50px;
+    border: 1px solid #00579c;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: dashed;
+
+}
+
+.indicate span {
+    display: block;
+    background-color: #00579c;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5rem;
+
+
+}
+
+.comonheight {
+    height: 29rem;
+}
+
+.comonheight div:first-child {
+    height: 40%;
+}
+
+/* .comonheight div:last-child{
+    height: 40%;
+} */
+.comonheight div:nth-child(2) {
+    height: 26%;
+}
+
+.dataslide p {
+    font-size: 1.4rem !important;
+}
+
+.didknow .slick-prev:before,
+.didknow .slick-next:before {
+    color: #00579c;
+}
+
+.indicate {
+    position: relative;
+}
+
+.diduslist {
+    width: 100%;
+}
+
+.diduslist li:first-child {
+    width: 40%;
+}
+
+.diduslist li:first-child span {
+    width: 100%;
+    height: 0.1rem;
+    background-color: #d1e2ff;
+    display: block;
+}
+
+.diduslist li:last-child span {
+    width: 100%;
+    height: 0.1rem;
+    background-color: #d1e2ff;
+    display: block;
+}
+
+.diduslist li:last-child {
+    width: 40%;
+}
+
+.diduslist li:nth-child(2) {
+    width: 20%;
+}
+
+.box.commonbck {
+    margin-top: 20px;
+}
+
+.vision p {
+    position: relative;
+    color: #162027;
+    padding-left: 3%;
+    font-family: 'Mulish-Medium';
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+    letter-spacing: normal;
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+}
+
+.vision p::before {
+    content: '';
+    width: 2rem;
+    height: 2rem;
+    background-image: url(../img/quotes.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: contain;
+    left: 0;
+}
+
+.slick-next:before {
+    content: '→';
+}
+
+.amalglationicon h6,
+.logodetails h6 {
+    font-size: 1.4rem;
+    font-family: 'Mulish-Bold';
+}
+
+.overviewpage .addressdetail P,
+.addressdetail.vision.about.p-1 {
+    line-height: 2.2rem;
+}
+
+/* .registeroffice li {
+    width: 100%;
+} */
+.registeroffice li div:first-child {
+    margin-right: 4%;
+}
+
+.registeroffice li div:first-child img {
+    height: 2rem;
+    width: 1.8rem;
+}
+
+/* Overview css end */
+/* subpage department css start */
+.docsub .boxcommon a {
+    text-decoration: none;
+}
+
+.docsub .boxcommon {
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 9px 16px 0 rgb(122 122 122 / 9%);
+    margin-top: 20px;
+}
+
+.locator .nav-tabs {
+    border: 0;
+}
+
+.importantab {
+    width: 100%;
+}
+
+.importantab li {
+    width: 16.6%;
+}
+
+.tab-content.docsub {
+    height: unset !important;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.importantab li:first-child {
+    border-top-right-radius: 1rem;
+
+}
+
+.importantab li:last-child {
+    border-top-left-radius: 1rem;
+
+}
+
+/* subpage department css end */
+/* Vision mission css start */
+.visionmission .latestupdatetop {
+    margin-bottom: 25px;
+}
+
+.visionmission.todays {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 20PX; */
+}
+
+.visionmission .dhgrasphtitle.vimision {
+    margin-right: 2%;
+}
+
+.visionmission .dhgrasphtitle {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: #fadedd;
+    margin-right: 10%;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.visionmission .vision,
+.missioncontaint {
+    border-top: 1px solid #b0bac9;
+    padding-top: 3%;
+}
+
+.visionmission .todays {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 20PX; */
+}
+
+.visionmission .vision p::before {
+    content: '';
+    width: 2rem;
+    height: 2rem;
+    background-image: url(../img/quotes.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: contain;
+    left: 0;
+}
+
+.visionmission .mission {
+    border: 1px solid #d1e2ff;
+    border-radius: 1rem;
+}
+
+.visionmission .mission p {
+    letter-spacing: normal;
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+    font-family: 'Mulish-Medium';
+}
+
+.visionmission .updatenewsholder p {
+    letter-spacing: normal;
+    line-height: 1.7rem;
+
+
+}
+
+.visionmission .Learnmore {
+    margin-top: 0;
+}
+
+.visionmission .leftmargintop.latestupdate.latesupdatesection ul {
+    max-height: 45.6rem;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.visionmission .update {
+    padding-top: 1.2rem;
+    margin-bottom: 1.4rem;
+    border-top: 2px solid #b0bac9;
+}
+
+.visionmission .updatenewsholder p {
+    color: #162027;
+    font-size: 1.2rem;
+    font-family: 'Mulish-Bold';
+}
+
+.visionmission .leftmargintop {
+    margin-top: 3rem;
+}
+
+.visionmission .leftmargintop.latestupdate.latesupdatesection ul li span {
+    cursor: pointer;
+}
+
+.visionmission .datesection p {
+    font-size: 12px;
+    color: #48536a;
+    font-family: 'Mulish-SemiBold';
+    margin: 0.3rem 0 0 0.5rem;
+}
+
+/* Vision mission css end */
+/* Rate and charges css start */
+.ratechargescontainer {
+    padding: 20px;
+}
+
+.border-blue {
+    border: 1px solid #d1e2ff;
+    border-radius: 10px;
+}
+
+.table.ratecharges thead tr th:first-child {
+    border-bottom: 1px solid #d1e2ff;
+}
+
+.table.ratecharges a span {
+    height: unset;
+    width: unset;
+}
+
+.table.ratecharges a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-family: 'Mulish-SemiBold';
+    color: #162027;
+}
+
+/* Rate and Chaarges css end */
+/* landing rate page css start */
+.landinftbl p {
+    font-size: 1.8rem;
+    color: #162027;
+    font-family: 'Mulish-SemiBold';
+    height: 6rem;
+}
+
+.graphsection {
+    margin-top: 3rem;
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 9px 16px 0 rgb(122 122 122 / 9%);
+}
+
+/* Landing rate css end */
+/* Award css start */
+/* Award section image css start */
+.imagecontainer {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.overlay-effect {
+    transition: all .4s linear;
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -o-transition: all .4s linear;
+}
+
+.overlay-effect {
+    width: 90%;
+    height: 90%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #00579c;
+    position: absolute;
+
+    border-radius: 5px;
+
+}
+
+.overlay-text-hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+
+}
+
+.imagecontainer:hover .overlay-text-hidden {
+    opacity: 0.85;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.border-white {
+    border: 1px solid white;
+    height: 90%;
+    border-radius: 5px;
+}
+
+.awardinfo h5 {
+    font-family: 'Mulish-ExtraBold';
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.awardinfo p {
+    font-family: 'Mulish-SemiBold';
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* Award section image css end */
+/* Award css end */
+/* Director screen css start */
+.nav-pills .nav-link.active .directorimg {
+
+    border-radius: 0.7rem;
+    border: 2.5px solid #00579c;
+    position: relative;
+}
+
+.nav-pills .nav-link.active .directorimg::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 100px solid #00579c;
+    border-bottom: 50px solid transparent;
+    border-top: 10px solid transparent;
+    border-right: 15px solid #00579c;
+    border-bottom: 10px solid transparent;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: -1.5rem;
+}
+
+.dtm {
+    margin: 5% 0;
+}
+
+.mdsecimg {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    border: 1px solid #00579c;
+}
+.mdsecimg  img{
+    height: 100%;
+    width: 100%;
+    border-radius: 70px;
+}
+ul.dirctdetail li:nth-child(2) {
+    margin-left: 2rem;
+}
+
+ul.dirctdetail li:nth-child(2) h5 {
+    font-family: 'Mulish-ExtraBold';
+    color: #162027;
+    font-size: 1.9rem;
+}
+
+ul.dirctdetail li:nth-child(2) P {
+    font-family: 'Mulish-Bold';
+    color: #00579c;
+}
+
+.infodirect {
+    color: #162027;
+    font-size: 1.6rem;
+    font-family: 'Mulish-Medium';
+}
+
+.directorinfo .listinfodata ul li:nth-child(2) {
+    margin: 0;
+
+}
+
+.listinfodata {
+    list-style-type: square;
+}
+
+.directorname {
+    position: absolute;
+    bottom: 0;
+    background-color: #1c1c1c59 !important;
+    left: 0;
+    right: 0;
+
+    display: block;
+}
+
+.nav-link.scrolltop.active .directorname {
+    display: none !important;
+    position: absolute;
+    bottom: 0;
+    background-color: #1c1c1c59;
+    left: 0;
+    right: 0;
+
+}
+
+.bg-transparent.border-end-0.tabsection.dttab {
+    position: relative;
+}
+
+.directorimg {
+    position: relative;
+    border:2px solid #00579c;
+    border-radius: 5px;
+}
+
+.directorname p {
+    color: #fff;
+}
+
+/* Director css end */
+/* vision mission css start */
+.dhgrasphtitle.vimision {
+    margin-right: 2%;
+}
+
+.vision,
+.missioncontaint {
+    border-top: 1px solid #b0bac9;
+    padding-top: 3%;
+}
+
+.vision p {
+    position: relative;
+    color: #162027;
+    padding-left: 3%;
+    font-family: 'Mulish-Medium';
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+}
+
+.mission p {
+    color: #162027;
+    margin-top: 0.5rem;
+    font-family: 'Mulish-Medium';
+}
+
+.vision p::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/quotes.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: contain;
+    left: 0;
+}
+
+.mission {
+    border: 1px solid #d1e2ff;
+    border-radius: 10px;
+}
+
+.directors .nav.flex-column.nav-pills {
+    margin-top: 6%;
+}
+
+/* vision mission css end */
+/* footer section css end */
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+    header .ubilogo a img {
+        height: 7.0rem;
+    }
+
+    header .headerlogo .ubinet {
+        height: 2.5rem;
+    }
+
+    header .headerhandler::after {
+        left: 0;
+    }
+
+    header .headerhandler {
+        padding: 0 2.0rem;
+    }
+
+    .headercontact_info--contact li {
+        font-size: 1.2rem;
+    }
+
+    .headercontact_info--helpline {
+        font-size: 1.2rem;
+    }
+
+}
+
+/* Media Query For Small Mobile */
+@media (max-width: 419px) {
+    header .headerlogo .ubinet {
+        height: 2rem;
+        width: 7rem;
+    }
+
+    .footersection {
+        flex-direction: column;
+    }
+}
+
+/* Max Media Query For  Mobile */
+@media (max-width: 575px) {
+    .container-fluid.justify-content-sm-center.logocenter.ubilogo {
+        justify-content: center;
+    }
+
+}
+
+/* Min Media Query For  Mobile */
+@media (min-width: 576px) {}
+
+
+
+
+
+/* Max Media Query For  Ipad-land */
+@media (max-width: 991px) {
+    header .headerhandler::after {
+        display: none;
+    }
+
+    header .headerhandler {
+        padding: 0;
+    }
+
+    header .ubilogo a img {
+        height: 8rem;
+    }
+
+    header .headerlogo .ubinet {
+        height: 3rem;
+    }
+
+    .headercontact_info--helpline {
+        font-size: 1.2rem;
+    }
+
+    .headercontact_info--contact li {
+        font-size: 1.2rem;
+    }
+
+    .footersection h6 {
+        font-size: 12px;
+    }
+
+    .notification {
+        background-size: 100% 100%;
+    }
+
+    .notification p {
+        padding: 0;
+        margin-bottom: 5px;
+    }
+
+    P {
+        font-size: 1.2rem;
+        letter-spacing: 0.50px;
+        line-height: 1.6rem;
+    }
+
+    h4,
+    .commonheadingtitle {
+        font-size: 1.4rem;
+        line-height: normal;
+        letter-spacing: 0.50px;
+    }
+
+    .searchfield {
+        font-size: 1.4rem
+    }
+
+    .awardinfo h5 {
+
+        font-size: 1.2rem;
+    }
+
+    .awardinfo p {
+
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+/* Max Media Query For Desktop 1366*/
+@media (max-width: 1366px) {
+    header .ubilogo a img {
+        height: 7.5rem;
+    }
+
+    header .headerlogo .ubinet {
+        height: 3.5rem;
+    }
+
+    .list_fonmtsize li {
+        font-size: 1.2rem;
+    }
+
+    .dash_list a {
+        font-size: 1.3rem;
+    }
+
+    .dash_list a span img {
+        height: 1.8rem;
+        width: 1.8rem;
+    }
+
+    .dash_list a span {
+        margin-left: 1.2rem;
+    }
+
+    .sidebar {
+        width: 22rem;
+    }
+
+    .dash_list a {
+        padding: 1rem
+    }
+
+    .dash_list a span {
+        margin: 0 1rem;
+    }
+
+    .maincontaint {
+        margin-left: 22rem;
+    }
+
+    .dataholder {
+        padding: 2%;
+    }
+
+    h4,
+    .commonheadingtitle {
+        font-size: 1.8rem;
+    }
+
+    .commonbck {
+        padding: 2rem;
+    }
+
+    .indexpage .dhgrasphtitle,
+    .iconcontain {
+        margin-right: 5%;
+        padding: 1rem;
+        justify-content: center;
+
+    }
+
+    .indexpage .linkcontainer img {
+        height: 3.5rem;
+    }
+
+    .indexpage .graphsection {
+        height: calc(100vh - 250px);
+    }
+
+    .indexpage .latestupdatetop {
+        margin: 0 0 1rem 0;
+    }
+
+    .updatenewsholder span img {
+        height: 1.6rem;
+        width: 1.6rem;
+    }
+
+    .indexpage .mdsection.text-center {
+        margin-top: 2rem;
+    }
+
+    .indexpage .alwomwn {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .indexpage .position {
+        font-size: 1.4rem;
+    }
+
+    .sublistmenu li a {
+        font-size: 1.2rem;
+    }
+
+    .sublistmenu li a {
+        padding: 0.5rem;
+    }
+
+    .sublistmenu {
+        padding: 0 0 0 20%;
+    }
+
+    .table thead tr th:last-child {
+        border-top-right-radius: 10px;
+    }
+
+    div.dataTables_wrapper div.dataTables_filter label,
+    div.dataTables_wrapper div.dataTables_length label {
+        display: none;
+    }
+
+    div.dataTables_wrapper div.dataTables_filter label,
+    div.dataTables_wrapper div.dataTables_length label {
+        display: none;
+    }
+
+    .table thead tr th {
+
+        font-size: 1.5rem;
+
+    }
+
+    .table tbody tr td {
+
+        font-size: 1.5rem;
+
+    }
+
+    div.dataTables_wrapper div.dataTables_info {
+
+        font-size: 1.5rem;
+    }
+
+    .dataTables_paginate.paging_simple_numbers .pagination li a {
+        font-family: 'Mulish-SemiBold';
+        font-size: 1.5rem;
+    }
+
+    .branchetail li {
+        margin: 1rem;
+    }
+
+    .branchetail li:not(:first-child) {
+        margin-left: 1rem;
+    }
+
+    .overviewpage .indexpage .dhgrasphtitle,
+    .iconcontain {
+        margin-right: 2%;
+    }
+
+    .vision p {
+        font-size: 1.4rem;
+    }
+
+    .dataslide p {
+        font-size: 1.4rem;
+    }
+
+    .ubinetdashboard.overviewside {
+        font-size: 1.4rem;
+    }
+
+    .overviewpage .addressdetail P,
+    .addressdetail.vision.about.p-1 {
+        line-height: 1.7rem;
+    }
+
+    .locator .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active,
+    .locator .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link {
+        font-size: 1.4rem;
+        word-break: break-all;
+    }
+
+    .visionmission .mission p {
+        font-size: 1.4rem;
+        margin-top: 10px;
+        line-height: 2.3rem;
+    }
+
+    .visionmission .update {
+        margin-bottom: 0.7rem;
+    }
+
+}
+
+/* Max Media Query For Desktop 1300 */
+@media (max-width: 1300px) {
+    .indexpage .graphsection {
+        height: calc(100vh - 250px);
+    }
+
+    .branch table.myTable tbody tr td,
+    .e-circularlis {
+        padding: 1.5rem;
+    }
+
+    .myTable td a {
+
+        font-size: 1.3rem;
+
+    }
+
+    .icon-document img {
+        height: 1.2rem;
+        width: 1.2rem;
+    }
+
+    .cureentpage {
+        font-size: 1.4rem;
+    }
+
+    .e-circularlis {
+        font-size: 1.4rem;
+    }
+
+    .icon-document {
+        margin-right: 1rem;
+    }
+
+    .locator .nav-link {
+        font-size: 1.4rem;
+    }
+
+    .importantab li {
+        width: unset;
+    }
+
+    .visionmission .update {
+        padding-top: 1.3rem;
+        margin-bottom: 0.9rem;
+    }
+
+}
+
+/* Max Media Query For Desktop Small 1280 */
+@media (max-width: 1280px) {
+    html {
+        font-size: 9px;
+    }
+
+    .indexpage .graphsection {
+        height: calc(100vh - 335px);
+    }
+
+    .overviewpage .addressdetail P,
+    .addressdetail.vision.about.p-1 {
+        line-height: 1.8rem;
+    }
+
+    .logodetails img:not(:nth-child(2)) {
+        width: 8rem;
+
+    }
+
+    .visionmission .update {
+        margin-top: 12px;
+    }
+}
+
+/* Max Media Query For Desktop Small */
+@media (max-width: 1200px) {
+    .indexpage .dropdownyear .form-select {
+        font-size: 1.2rem;
+    }
+
+    .indexpage .graphsection {
+        height: calc(100vh - 295px);
+    }
+
+    .logodetails img:not(:nth-child(2)) {
+        width: 11rem;
+
+    }
+
+    .amalglationicon img {
+        width: 15rem;
+        height: 4.5rem;
+    }
+
+    .indexpage .dhgrasphtitle,
+    .iconcontaint {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+/* Max Media Query For Desktop large */
+/* Max Media Query For Desktop Small 1050 */
+@media (max-width: 1150px) {
+    html {
+        font-size: 8px;
+    }
+
+    h4,
+    .commonheadingtitle {
+        font-size: 1.6rem;
+    }
+
+    .dhgrasphtitle img {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .indexpage .graphsection {
+        height: calc(100vh - 367px);
+    }
+
+    .amalglationicon img {
+        width: 15rem;
+        height: 3rem;
+    }
+
+    .vision,
+    .missioncontaint {
+        margin-top: 2%;
+    }
+
+    .overviewpage .addressdetail h6 {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 1919px) {
+    body {
+
+        font-size: 2.0rem;
+
+        letter-spacing: normal;
+
+    }
+}
+
+@media (max-width: 1150px) {
+    .indexpage .graphsection {
+        height: calc(100vh - 340px);
+    }
+
+    .visionmission .latestupdatetop {
+        margin-bottom: 15px;
+    }
+
+    .visionmission .leftmargintop {
+        margin-left: 10px;
+    }
+
+    .visionmission .latestupdatetop {
+        margin-bottom: 1.9rem;
+    }
+
+}
+
+/* Max Media Query For  Ipad-land-Max */
+@media (max-width: 991px) {
+    html {
+        font-size: 10px;
+    }
+
+    .indexpage .row10 {
+        --bs-gutter-x: 2rem;
+    }
+
+    header .ubilogo a img {
+        height: 10rem;
+    }
+
+    .leftsidesection.commonbck {
+        margin-top: 2.5rem;
+    }
+
+    .sidebar_content {
+        margin-bottom: 30rem;
+    }
+
+    .indexpage .linkcontainer img {
+        height: 3rem;
+    }
+
+    .datacontaint {
+        margin: 2% 0 9% 0;
+    }
+
+    .sortdocument {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .branch .tabcomoon.tab-content {
+        margin-top: 2rem;
+        padding: 1rem;
+
+    }
+
+    .tabsection .nav.flex-column.nav-pills li {
+        flex-direction: row;
+    }
+
+    .nav-link.active span.check {
+        margin: 0.8rem 1rem 0.7rem 0;
+    }
+
+    .nav-link span.check {
+        margin: 0.8rem 1rem 0.7rem 0;
+    }
+
+    .tabsection .nav-link {
+        font-size: 1.2rem;
+    }
+
+    .e-circularlis {
+        font-size: 1.3rem;
+    }
+
+    div.dataTables_wrapper div.dataTables_info {
+        font-family: 'Mulish-Medium';
+        font-size: 1.4rem;
+    }
+
+    .dataTables_paginate.paging_simple_numbers .pagination li a {
+        font-family: 'Mulish-SemiBold';
+        font-size: 1.4rem;
+    }
+
+    .table tbody tr td {
+        font-size: 1.4rem;
+    }
+
+    .table thead tr th {
+        font-size: 1.4rem;
+    }
+
+    .table.myTable {
+        padding: 0.5rem;
+    }
+
+    .nav.flex-column.nav-pills {
+        flex-direction: row !important;
+    }
+
+    .bankbranchdt {
+        width: 100%;
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+
+    .notebranch p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+
+    .showbranch span {
+        font-size: 1.4rem;
+    }
+
+    .showbranch li p {
+        font-size: 1.4rem;
+    }
+
+    .branchetail li {
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .brcontact span {
+        font-size: 1.4rem;
+    }
+
+    .downloaddoc li p {
+        font-size: 1.2rem;
+    }
+
+    .titledoc {
+        padding-bottom: 0.5rem;
+    }
+
+    .titledoc .formdownloaddoc {
+        font-size: 1.6rem;
+    }
+
+    .vision p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    .dataslide p {
+        font-size: 1.2rem !important;
+    }
+
+    .didknow .slick-prev,
+    .didknow .slick-next,
+    .indicate span {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .indicate {
+        height: 4rem !important;
+        width: 4rem;
+    }
+
+    .slick-next,
+    .slick-prev {
+        top: 51%;
+    }
+
+    .todays.latestupdatetop.ipad {
+        flex-direction: column;
+    }
+
+    .ubinetdashboard.overviewside {
+        white-space: nowrap;
+    }
+
+    .registeroffice li {
+        flex-direction: column;
+    }
+
+    .addressdetail.p-1 p {
+        word-break: break-all;
+    }
+
+    .newlogo {
+        height: 5.7rem;
+    }
+
+    .vision.border-0.history:after {
+        height: 13rem;
+    }
+
+    .locator .nav-link,
+    .locator .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+        font-size: 1.2rem;
+    }
+
+    .visionmission .mission p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    .landinftbl p {
+        font-size: 1.4rem;
+    }
+}
+
+
+/* Min Media Query For  min992 */
+@media (max-width:992px) {}
+
+/* Max Media Query For  Ipad */
+@media (max-width: 768px) {
+    .headerlogo {
+        flex-direction: column;
+    }
+
+    header .headerlogo .ubinet {
+        width: 12rem;
+    }
+
+    .search {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .contactdetail {
+        margin-top: 1rem;
+    }
+
+    .headercontact_info--contact li:nth-child(1) {
+        margin-left: 0;
+    }
+
+    .headercontact_info--helpline {
+        text-align: start;
+    }
+
+    .headercontact_info--contact li:first-child {
+        margin-left: 0;
+    }
+
+    .indexpage .mdsection {
+        margin-bottom: 2rem;
+    }
+
+    .hamburger {
+        display: block;
+        margin-right: 1%;
+        padding: 2%;
+        background-color: #d1e2ff;
+        border-radius: 50px;
+        width: 5rem;
+
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-light .navbar-toggler-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .sidebar {
+        z-index: 1;
+        display: none;
+
+    }
+
+    .sidebar.sidebarblock {
+        display: block;
+        transition: 0.5s;
+    }
+
+    .maincontaint {
+        margin-left: 0;
+
+    }
+
+    header .headercontact_info--contact li:nth-child(3)::after {
+        content: '';
+        height: 1.1rem;
+        width: 0.1rem;
+
+    }
+
+    header .headercontact_info--contact li:nth-child(3)::before {
+        content: '';
+        height: 1.1rem;
+        width: 0.1rem;
+
+    }
+
+    .myTable td a {
+
+        font-size: 1.2rem;
+
+    }
+
+    .branch table.myTable tbody tr td {
+        padding: 1.2rem;
+    }
+
+    .urls ul li {
+        font-size: 1.2rem;
+
+    }
+
+    .cureentpage {
+        font-size: 1.2rem;
+    }
+
+    .tabsection .nav-link {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+
+    .urls {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+    }
+
+    .ecircularpage .commonbck {
+        margin-top: 0rem;
+    }
+
+    .e-circularlis {
+        margin-top: 1rem;
+    }
+
+    .ecircularpage .row10 {
+        --bs-gutter-x: 1rem;
+    }
+
+    .commonbck {
+        padding: 1.2rem;
+    }
+
+    .retirement .commonbck {
+        margin-top: 0rem;
+    }
+
+    div.dataTables_wrapper div.dataTables_info {
+        font-family: 'Mulish-Medium';
+        font-size: 1.2rem;
+    }
+
+    .dataTables_paginate.paging_simple_numbers .pagination li a {
+        font-family: 'Mulish-SemiBold';
+        font-size: 1.2rem;
+    }
+
+    div.dataTables_wrapper div.dataTables_info {
+        font-family: 'Mulish-Medium';
+        font-size: 1.2rem;
+    }
+
+    .dataTables_paginate.paging_simple_numbers .pagination li a {
+        font-family: 'Mulish-SemiBold';
+        font-size: 1.2rem;
+    }
+
+    .table tbody tr td {
+        font-size: 1.2rem;
+    }
+
+    .retirement .notification h4 {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .table tbody tr td {
+        padding: 0.5rem;
+    }
+
+    .table thead tr th {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+
+    .retirement .notification h4 {
+        font-size: 1.4rem;
+    }
+
+    .tabsection {
+        margin-top: 0;
+    }
+
+    .table.myTable {
+
+        border-spacing: 0 1.2rem;
+        padding: 0.5rem;
+        position: relative;
+        top: unset;
+    }
+
+    .todays.latestupdatetop.ipad {
+        flex-direction: row;
+    }
+
+    .registeroffice li {
+        flex-direction: row;
+    }
+
+    .ubinetdashboard.overviewside {
+        font-size: 1.6rem;
+    }
+
+    .logodetails img:not(:nth-child(2)) {
+        width: auto;
+    }
+
+    /* .logodetails img:nth-child(3){
+        height: 12%;
+    } */
+    .amalglationicon img {
+        width: unset;
+        height: unset;
+    }
+
+    .docsub .boxcommon {
+        padding: 1rem;
+    }
+
+    .tab-content {
+        padding: 1rem;
+    }
+
+    .visionmission .leftmargintop {
+        margin-left: 0;
+    }
+
+    .visionmission .vision p {
+        font-size: 1.4rem;
+    }
+
+    .visionmission .mission p {
+        font-size: 1.4rem;
+    }
+
+    .visionmission .dhgrasphtitle {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .row-md-mt {
+        margin-top: 1rem;
+    }
+
+    .awardinfo h5 {
+
+        font-size: 1.4rem;
+    }
+
+    .awardinfo p {
+
+        font-size: 1.2rem;
+    }
+
+    .imagecontainer img {
+        width: 100%;
+    }
+}
+
+/* Min Media Query For  Ipad */
+@media (min-width: 766px) {}
+
+
+/* Media Query For Small Mobile */
+@media (max-width: 419px) {
+    header .headerlogo .ubinet {
+        height: 2rem;
+        width: 7rem;
+    }
+
+    .footersection {
+        flex-direction: column;
+        position: unset;
+    }
+
+    .hamburger {
+
+        width: 3rem;
+
+        height: 3rem;
+
+    }
+
+    .navbar-light .navbar-toggler-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .indexpage .graphsection {
+        height: unset;
+    }
+
+    .list_fonmtsize li {
+        font-size: 1rem;
+    }
+
+    header .ubilogo a img {
+        height: 7rem;
+    }
+
+    header .emrcell {
+        width: 12px;
+        height: 12px;
+    }
+
+    .hamburger {
+
+        margin-right: 10%;
+
+    }
+
+    .dataslide p {
+        font-size: 1rem;
+    }
+
+    .comonheight {
+        height: 40rem;
+    }
+
+    .logodetails img {
+        width: 10rem;
+    }
+}
+
+
+/* Max Media Query For  Mobile */
+@media (max-width: 575px) {
+    .container-fluid.justify-content-sm-center.logocenter.ubilogo {
+        justify-content: center;
+    }
+
+    .tollfreeno {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tollfreeno li {
+        width: 100%;
+    }
+
+    .tollfreeno li:nth-child(1)::after {
+        display: none
+    }
+
+    .tollfreeno li:nth-child(3)::before {
+        display: none;
+    }
+
+    .tollfreeno li:nth-child(3) {
+        align-items: flex-start;
+    }
+
+    .dclinks .downloaddoc li img {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .dclinks .boxcommon {
+        padding: 2rem;
+    }
+
+    .landinftbl p {
+        font-size: 1.2rem;
+        height: 2rem;
+        margin-top: 2rem;
+    }
+
+    .landinftbl table {
+        margin-top: 2rem;
+    }
+}
+
+/* Min Media Query For Desktop large */
+@media (min-width: 1920px) {
+
+    /* html {
+        font-size: 12px;
+    } */
+    .indexpage .slick-dotted.slick-slider{
+        height: 40rem  ;
+    }
+    .row1920 {
+        --bs-gutter-x: 2.8rem;
+    }
+
+    p.headercontact_info--helpline.m-0.list_fonmtsize {
+        font-size: 1.6rem;
+    }
+
+    header .form-control::placeholder {
+
+        font-size: 1.4rem;
+    }
+
+    #notification-msghidden {
+        font-size: 1.6rem;
+        letter-spacing: normal;
+        line-height: normal;
+    }
+
+    .commonbck {
+        padding: 2.8rem;
+    }
+
+    .indexpage .update {
+        padding-top: 1.9rem;
+        margin-top: 1.9rem;
+    }
+
+    .indexpage .position {
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
+
+    .indexpage .alwomwn {
+        margin-bottom: 2rem;
+    }
+
+    .tabsection .nav-link {
+        font-size: 1.6rem;
+    }
+
+    .tab-content.tabcomoon h4 {
+        font-size: 2rem;
+    }
+
+    .urls ul li {
+        font-size: 1.6rem;
+    }
+
+    .tollfreeno li p,.e-circularlis {
+        font-size: 1.6rem;
+    }
+
+    .branchetail li p {
+
+        font-size: 1.8rem;
+    }
+
+    .downloads .boxcommon {
+        padding: 2rem;
+    }
+
+    .vision.border-0.history:after {
+
+        width: 13rem;
+        height: 14rem;
+
+        top: -1rem;
+
+    }
+    .indexpage .updatenewsholder p ,.overviewpage .addressdetail P{
+        font-size: 1.4rem;
+    }
+    .indexpage .todaysdate {
+        font-size: 1.6rem;
+    }
+    .overviewpage .about .comonheight .dataslide p{
+        font-size: 1.6rem !important;
+    }
+    .dataslide h6 {
+        font-size: 1.4rem;
+    }
+    
+    .tab-content h4{
+        font-size: 2rem;
+    }
+    .awardinfo h5{
+        font-size: 2rem;
+    }
+    .awardinfo p{
+        font-size: 1.6rem;
+    }
+}

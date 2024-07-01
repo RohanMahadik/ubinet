@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="24.828" viewBox="0 0 30 24.828">
+    <g data-name="Eye close Icon">
+        <g data-name="Group 33595">
+            <path data-name="Path 44247" d="M16 25c-8.126 0-14.519-8.041-14.787-8.383a1 1 0 0 1 0-1.234C1.481 15.041 7.874 7 16 7s14.519 8.041 14.787 8.383a1 1 0 0 1 0 1.234C30.519 16.959 24.126 25 16 25zM3.313 16c1.619 1.814 6.762 7 12.687 7s11.068-5.186 12.687-7C27.068 14.186 21.925 9 16 9S4.932 14.186 3.313 16z" style="fill:#48536a" transform="translate(-1 -3.086)"/>
+            <path data-name="Path 44248" d="M16 21a5 5 0 1 1 5-5 5 5 0 0 1-5 5zm0-8a3 3 0 1 0 3 3 3 3 0 0 0-3-3z" style="fill:#48536a" transform="translate(-1 -3.086)"/>
+        </g>
+        <path data-name="Line 1669" transform="translate(4.5 1.414)" style="fill:none;stroke:#48536a;stroke-linecap:round;stroke-width:2px" d="M22 0 0 22"/>
+    </g>
+</svg>
